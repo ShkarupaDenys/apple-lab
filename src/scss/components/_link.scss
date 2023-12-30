@@ -1,0 +1,7 @@
+.link {
+    font-size: 24px;
+    color: $link-color;
+
+    @include hover(color, $link-color-hover);
+    @include active(color, $link-color-active);
+}

@@ -1,6 +1,15 @@
-//setup mixins for your project
-//example below can delete.
+@mixin hover($property, $toValue) {
+    transition: #{$property} 0.3s;
 
-@mixin sectionPadding {
-    padding: 60px 0;
+    &:hover {
+        #{$property}: $toValue;
+    }
+}
+
+@mixin active($property, $toValue) {
+    transition: #{$property} 0.2s;
+
+    &:active {
+        #{$property}: $toValue;
+    }
 }

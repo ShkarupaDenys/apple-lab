@@ -1,3 +1,33 @@
-//
-// Project Variables
-//
+//  colors
+$primary: #298fda;
+$primary-1: #0072c6;
+$primary-2: #0765aa;
+$black: #242424;
+$grey: #808080;
+$grey-1: #e5e5e5;
+$light-grey: #d0d0d0;
+$white: #fff;
+$dark-white: #fcfcfc;
+$red: #e31717;
+
+//  font
+$font-color: $black;
+
+//  button
+$btn-border-radius: 40px;
+$btn-text-color: $dark-white;
+$btn-outline-text-color: $font-color;
+$btn-bg-hover: $primary-1;
+$btn-bg-disabled: $light-grey;
+$btn-bg-active: $primary-2;
+$btn-outline-bg-hover: $primary;
+
+//  field
+$field-border-radius: 60px;
+$field-bg: $grey-1;
+$field-placeholder: $grey;
+
+//  link
+$link-color: $primary;
+$link-color-hover: $primary-1;
+$link-color-active: $primary-2;

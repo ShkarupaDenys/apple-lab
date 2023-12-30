@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.svg" />
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +14,11 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./scss/style.scss" />
-    <script type="module" defer src="./js/main.js"></script>
+    <link rel="stylesheet" href="../scss/style.scss" />
+    <script type="module" defer src="../js/main.js"></script>
     <title>Vite Build</title>
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; gap: 20px">
     <h1 class="h1">Vite Template Project v2</h1>
     <h1 class="h2">Vite Template Project v2</h1>
     <h1 class="h3">Vite Template Project v2</h1>
@@ -39,11 +39,19 @@
     <p class="p9">Vite Template Project v2</p>
     <p class="p10">Vite Template Project v2</p>
 
+    <button class="button">Записаться на ремонт</button>
+    <button class="button button--w-100">Записаться на ремонт</button>
+    <button disabled class="button">Записаться на ремонт</button>
     <button disabled class="button button--w-100">Записаться на ремонт</button>
-    <a disabled href="" class="button button--outline">Написать в телеграм</a>
+
+    <a href="" class="button">Написать в телеграм</a>
+    <a href="" class="button button--outline">Написать в телеграм</a>
+    <a disabled href="" class="button">Написать в телеграм</a>
+    <a disabled href="" class="button button--outline">Написать в телеграм</a>
+
     <input type="text" class="field" placeholder="Ваше имя" />
 
-    <a class="link" href="./nested/ui-kit.html">About</a>
-    <img src="./img/sample image.jpg" alt="" />
+    <a class="link" href="/">Home</a>
+    <img src="../img/sample image.jpg" alt="" />
   </body>
 </html>
