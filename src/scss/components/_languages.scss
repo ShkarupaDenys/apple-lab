@@ -1,0 +1,20 @@
+.languages {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    &__text {
+        color: $font-grey-color;
+
+        &--active {
+            color: $font-color;
+        }
+    }
+
+    &__border {
+        width: 1px;
+        height: 18px;
+        display: block;
+        background-color: $grey;
+    }
+}

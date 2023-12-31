@@ -1,0 +1,25 @@
+.logo {
+    display: inline-flex;
+    width: 165px;
+    height: 40px;
+
+    @include tablet {
+        width: 194px;
+        height: 47px;
+    }
+
+    &--large {
+        width: 181px;
+        height: 45px;
+
+        @include desktop {
+            height: 75px;
+            width: 301px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

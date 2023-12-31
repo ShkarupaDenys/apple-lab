@@ -1,0 +1,119 @@
+.header {
+    padding-top: 32px;
+
+    @include largeMob {
+        padding-top: 30px;
+    }
+
+    @include tablet {
+        padding-top: 50px;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        align-items: center;
+
+        @include laptop {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__burger-menu {
+        margin-left: auto;
+        grid-column: 6 / 7;
+
+        @include laptop {
+            grid-column: 4 / 5;
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__languages {
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__button-mail,
+    &__nav-button {
+        display: none;
+
+        @include laptop {
+            width: max-content;
+            display: inline-flex;
+        }
+    }
+
+    &__contacts {
+        display: none;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-shrink: 0;
+        }
+
+        &-text {
+            display: none;
+        }
+
+        &-img-geo {
+            @include tablet {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &-img-phone {
+            @include tablet {
+                width: 27px;
+                height: 27px;
+            }
+        }
+
+        &-geo {
+            @include tablet {
+                .header__contacts-text {
+                    display: block;
+                }
+            }
+        }
+
+        &-phone {
+            @include desktop {
+                .header__contacts-text {
+                    display: block;
+                }
+            }
+        }
+
+        @include largeMob {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: auto;
+            grid-column: 4 / 6;
+        }
+
+        @include laptop {
+            display: none;
+        }
+
+        @include desktop {
+            display: flex;
+            grid-column: none;
+        }
+    }
+}
