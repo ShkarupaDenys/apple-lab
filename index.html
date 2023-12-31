@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/x-icon" href="/apple-lab/assets/favicon.17e50649.svg" />
 
@@ -17,10 +20,10 @@
     
     
     <title>Vite Build</title>
-    <script type="module" crossorigin src="/apple-lab/assets/main.b0fb0a69.js"></script>
-    <link rel="stylesheet" href="/apple-lab/assets/main.adfb55c1.css">
+    <script type="module" crossorigin src="/apple-lab/assets/header.bf7d88dd.js"></script>
+    <link rel="stylesheet" href="/apple-lab/assets/header.6918798d.css">
   </head>
-  <body>
+  <body style="height: 300vh">
     <!--    HEADER    -->
     <header class="header">
       <div class="container">
@@ -81,5 +84,90 @@
         </div>
       </div>
     </header>
+
+    <!--    HERO-SCREEN    -->
+    <section class="hero-screen">
+      <div class="container">
+        <div class="grid grid--desktop hero-screen__wrap">
+          <div class="grid__item grid__item--1-6">
+            <div class="hero-screen__content">
+              <h1 class="h3">Ремонт техники Apple</h1>
+              <p class="p2 hero-screen__sub-title">
+                AppleLab - сеть сервисных центров Apple в Украине. Наша цель —
+                быть лучшими в сфере сервисного обслуживания Apple.
+              </p>
+              <p class="p2 p2--600 font-primary hero-screen__sale">
+                На первый ремонт скидка 5%.
+              </p>
+              <p class="p2 p2--600 font-primary hero-screen__sale-short">
+                Скидка 5%.
+              </p>
+              <ul class="hero-screen__list">
+                <li class="hero-screen__item">
+                  <img
+                    src="/apple-lab/assets/settings.04529817.svg"
+                    alt="settings"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">ремонт</span>
+                </li>
+                <li class="hero-screen__item">
+                  <img
+                    src="/apple-lab/assets/service.98d14a4e.svg"
+                    alt="service"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">обслуживание</span>
+                </li>
+                <li class="hero-screen__item">
+                  <img
+                    src="/apple-lab/assets/consultations.3430de90.svg"
+                    alt="consultations"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">консультации</span>
+                </li>
+              </ul>
+              <div class="hero-screen__actions">
+                <button class="button button--w-100">
+                  Записаться на ремонт
+                </button>
+                <button class="button button--w-100 button--outline">
+                  Написать в телеграм
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item grid__item--7-12">
+            <picture class="hero-screen__picture">
+              <source
+                srcset="/apple-lab/assets/img-desktop.06c86a19.webp "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/apple-lab/assets/img-laptop.d10a0bec.webp "
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="/apple-lab/assets/img-tablet.cb14de0a.webp , /apple-lab/assets/img-tablet@2x.b9112446.webp 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/apple-lab/assets/img-mob-lg.63ba6914.webp , /apple-lab/assets/img-mob-lg@2x.eac5ea5f.webp 2x"
+                media="(min-width: 480px)"
+              />
+              <source
+                srcset="/apple-lab/assets/img-mob.14223016.webp , /apple-lab/assets/img-mob@2x.883f3ad1.webp 2x"
+              />
+              <img
+                src="/apple-lab/assets/img-desktop.06c86a19.webp"
+                alt="Laptop"
+                class="hero-screen__img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
