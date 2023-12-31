@@ -2,11 +2,15 @@
     background-color: $primary;
     display: inline-flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 18px;
     padding: 15px 20px;
     border-radius: $btn-border-radius;
     color: $btn-text-color;
     line-height: 27px;
+
+    @include largeMob {
+        font-size: 22px;
+    }
 
     @include hover("background-color", $btn-bg-hover);
     @include active("background-color", $btn-bg-active);

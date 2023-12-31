@@ -13,8 +13,12 @@
 }
 
 .h2 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
+
+    @include largeMob {
+        font-size: 32px;
+    }
 
     @include tablet {
         font-size: 36px;
@@ -22,13 +26,19 @@
 }
 
 .h3 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
+
+    @include largeMob {
+        font-size: 30px;
+    }
 
     @include tablet {
         font-size: 36px;
     }
 }
+
+// need to check headings from h4 to end
 
 .h4 {
     font-size: 24px;
@@ -82,6 +92,10 @@
 
 .p2 {
     font-size: 22px;
+
+    &--600 {
+        font-weight: 600;
+    }
 
     @include tablet {
         font-size: 24px;
@@ -151,4 +165,12 @@
     @include tablet {
         font-size: 20px;
     }
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.font-primary {
+    color: $font-primary-color;
 }

@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    min-width: 360px;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
