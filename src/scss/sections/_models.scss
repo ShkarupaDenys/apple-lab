@@ -1,0 +1,78 @@
+.models {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__btn {
+        padding: 10px 30px;
+        position: relative;
+        transition: all linear 0.3s;
+        border-radius: 40px;
+
+        &.selected {
+            color: $font-color;
+            background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 40px;
+        }
+
+        @include laptop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include desktop {
+            row-gap: 30px;
+        }
+    }
+
+    &__content {
+        &.hidden {
+            display: none;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        &-title {
+            text-align: center;
+        }
+    }
+
+    &__actions {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}

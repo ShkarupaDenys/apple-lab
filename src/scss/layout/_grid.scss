@@ -40,10 +40,28 @@
     }
 
     &__item {
-        @for $start from 1 through 6 {
-            @for $end from $start through 6 {
+        @for $start from 1 through 3 {
+            @for $end from $start through 3 {
+                &--tablet-#{$start}-#{$end} {
+                    grid-column: #{$start} / #{$end + 1};
+                }
+
                 &--tablet-#{$start}-#{$end} {
                     @include tablet {
+                        grid-column: #{$start} / #{$end + 1};
+                    }
+                }
+            }
+        }
+
+        @for $start from 1 through 4 {
+            @for $end from $start through 4 {
+                &--laptop-#{$start}-#{$end} {
+                    grid-column: #{$start} / #{$end + 1};
+                }
+
+                &--laptop-#{$start}-#{$end} {
+                    @include laptop {
                         grid-column: #{$start} / #{$end + 1};
                     }
                 }
