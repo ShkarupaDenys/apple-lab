@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg" />
 
@@ -18,7 +21,7 @@
     <script type="module" defer src="./js/main.js"></script>
     <title>Vite Build</title>
   </head>
-  <body>
+  <body style="height: 300vh">
     <!--    HEADER    -->
     <header class="header">
       <div class="container">
@@ -79,5 +82,99 @@
         </div>
       </div>
     </header>
+
+    <!--    HERO-SCREEN    -->
+    <section class="hero-screen">
+      <div class="container">
+        <div class="grid grid--desktop hero-screen__wrap">
+          <div class="grid__item grid__item--1-6">
+            <div class="hero-screen__content">
+              <h1 class="h3">Ремонт техники Apple</h1>
+              <p class="p2 hero-screen__sub-title">
+                AppleLab - сеть сервисных центров Apple в Украине. Наша цель —
+                быть лучшими в сфере сервисного обслуживания Apple.
+              </p>
+              <p class="p2 p2--600 font-primary hero-screen__sale">
+                На первый ремонт скидка 5%.
+              </p>
+              <p class="p2 p2--600 font-primary hero-screen__sale-short">
+                Скидка 5%.
+              </p>
+              <ul class="hero-screen__list">
+                <li class="hero-screen__item">
+                  <img
+                    src="./img//icons/settings.svg"
+                    alt="settings"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">ремонт</span>
+                </li>
+                <li class="hero-screen__item">
+                  <img
+                    src="./img/icons/service.svg"
+                    alt="service"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">обслуживание</span>
+                </li>
+                <li class="hero-screen__item">
+                  <img
+                    src="./img/icons/consultations.svg"
+                    alt="consultations"
+                    class="hero-screen__item-icon"
+                  />
+                  <span class="hero-screen__item-text p2">консультации</span>
+                </li>
+              </ul>
+              <div class="hero-screen__actions">
+                <button class="button button--w-100">
+                  Записаться на ремонт
+                </button>
+                <button class="button button--w-100 button--outline">
+                  Написать в телеграм
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item grid__item--7-12">
+            <picture class="hero-screen__picture">
+              <source
+                srcset="./img/hero-screen/img-desktop.webp"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="./img/hero-screen/img-laptop.webp"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./img/hero-screen/img-tablet.webp,
+                  ./img/hero-screen/img-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/hero-screen/img-mob-lg.webp,
+                  ./img/hero-screen/img-mob-lg@2x.webp 2x
+                "
+                media="(min-width: 480px)"
+              />
+              <source
+                srcset="
+                  ./img/hero-screen/img-mob.webp,
+                  ./img/hero-screen/img-mob@2x.webp 2x
+                "
+              />
+              <img
+                src="./img/hero-screen/img-desktop.webp"
+                alt="Laptop"
+                class="hero-screen__img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
