@@ -962,5 +962,72 @@
         <button class="article__button p1">Узнать больше</button>
       </div>
     </article>
+
+    <!--    CTA    -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta__wrap">
+          <div class="cta__grid">
+            <div class="cta__title-box">
+              <h2 class="h3">
+                Не нашли,то <br class="cta__transfer" />
+                что искали?
+              </h2>
+              <p class="p4">
+                Лаборатория Apple поможет решить вашу проблему. Оставте ваши
+                данные и с вами свяжуться для консультации
+              </p>
+            </div>
+            <picture class="cta__picture">
+              <source
+                srcset="./img/cta/img-desktop.webp"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="./img/cta/img-laptop.webp"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="
+                  ./img/cta/img-tablet.webp,
+                  ./img/cta/img-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/cta/img-mob-lg.webp,
+                  ./img/cta/img-mob-lg@2x.webp 2x
+                "
+                media="(min-width: 480px)"
+              />
+              <source
+                srcset="./img/cta/img-mob.webp, ./img/cta/img-mob@2x.webp 2x"
+              />
+              <img
+                src="./img/cta/img-desktop.webp"
+                alt="Laptop"
+                class="cta__img"
+              />
+            </picture>
+            <form class="cta__form" method="post" action="">
+              <input
+                type="text"
+                class="field cta__field"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="text"
+                class="field cta__field"
+                placeholder="Ваш номер телефона"
+              />
+              <button class="button button--w-100 cta__button">
+                Записаться на ремонт
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
