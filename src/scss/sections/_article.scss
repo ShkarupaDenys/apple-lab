@@ -1,0 +1,163 @@
+.article {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 110px;
+    }
+
+    &__wrap,
+    &__section-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrap {
+        gap: 30px;
+        margin-bottom: 30px;
+        background-color: $white;
+        border-radius: 20px;
+        box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.9);
+        padding: 20px 0;
+        position: relative;
+
+        @include tablet {
+            padding: 40px 0;
+        }
+
+        &--hidden {
+            max-height: 365px;
+            overflow: hidden;
+            box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
+
+            &::before {
+                content: "";
+                display: block;
+                height: 100%;
+                position: absolute;
+                inset: 0;
+                box-shadow: inset 0px -137px 36px -67px rgb(252, 252, 252);
+            }
+        }
+    }
+
+    &__section-box {
+        gap: 20px;
+
+        @include tablet {
+            gap: 30px;
+        }
+    }
+
+    &__section-box {
+        padding: 0 20px;
+
+        @include laptop {
+            padding: 0 40px;
+        }
+
+        &-repair-left,
+        &-geo-left {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include tablet {
+                gap: 30px;
+            }
+
+            @include laptop {
+                padding: 0 0 0 40px;
+                justify-content: center;
+                height: 100%;
+            }
+        }
+
+        &-geo-left {
+            @include laptop {
+                padding: 0 40px;
+            }
+
+            @include desktop {
+                padding: 0 0 0 40px;
+            }
+        }
+
+        &-repair-right,
+        &-geo-right {
+            padding: 20px 20px 0 20px;
+
+            @include tablet {
+                padding: 30px 20px 0 20px;
+            }
+
+            @include laptop {
+                padding: 0 40px 0 0;
+            }
+        }
+
+        &-geo-right {
+            @include laptop {
+                padding: 30px 0 0 0;
+            }
+
+            @include desktop {
+                padding: 0 40px 0 0;
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+        }
+    }
+
+    &__picture {
+        &--2 {
+            max-width: 396px;
+            margin: 0 auto;
+
+            @include laptop {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+
+        &--3 {
+            max-width: 584px;
+            margin: 0 auto;
+
+            @include desktop {
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__list {
+        list-style: inside;
+        list-style-position: outside;
+        padding-left: 20px;
+
+        @include tablet {
+            padding-left: 40px;
+        }
+    }
+
+    &__button {
+        position: relative;
+        width: max-content;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 3px;
+            margin-top: 8px;
+            border-radius: 3px;
+            position: relative;
+            background-color: $primary;
+        }
+    }
+}
