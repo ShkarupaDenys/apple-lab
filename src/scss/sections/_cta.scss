@@ -1,0 +1,137 @@
+.cta {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__wrap {
+        position: relative;
+        padding: 40px 20px;
+        border-radius: 40px;
+        background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            inset: 0;
+            background: center / cover no-repeat url(../../img/cta/bg-mob.webp);
+            z-index: 1;
+
+            @include largeMob {
+                background: center / cover no-repeat url(../../img/cta/bg-mob-lg.webp);
+            }
+
+            @include tablet {
+                background: center / cover no-repeat url(../../img/cta/bg-tablet.webp);
+            }
+
+            @include laptop {
+                background: center / cover no-repeat url(../../img/cta/bg-laptop.webp);
+            }
+
+            @include desktop {
+                background: center / cover no-repeat url(../../img/cta/bg-desktop.webp);
+            }
+        }
+
+        @include tablet {
+            padding: 40px;
+        }
+
+        @include laptop {
+            padding: 40px 0;
+        }
+
+        @include desktop {
+            padding: 50px 0;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        position: relative;
+        z-index: 2;
+
+        @include laptop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include desktop {
+            column-gap: 100px;
+        }
+    }
+
+    &__transfer {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include laptop {
+            grid-column: 3 / 5;
+            max-width: 415px;
+            align-self: end;
+
+            @include desktop {
+                max-width: 565px;
+            }
+        }
+    }
+
+    &__form {
+        @include laptop {
+            grid-column: 3 / 5;
+            max-width: 415px;
+        }
+    }
+
+    &__field {
+        margin-bottom: 20px;
+        font-size: 18px;
+        background-color: $white;
+        line-height: 22px;
+
+        @include largeMob {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &::placeholder {
+            color: $light-grey;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__picture {
+        margin: 0 auto;
+        padding-left: 40px;
+
+        @include laptop {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+
+        @include desktop {
+            padding-left: 100px;
+        }
+    }
+
+    &__button {
+        @include tablet {
+            width: max-content;
+        }
+    }
+}
