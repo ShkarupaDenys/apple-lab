@@ -1,0 +1,67 @@
+.footer {
+    padding: 50px 20px;
+    background-color: $grey-2;
+    font-size: 22px;
+    line-height: normal;
+
+    @include largeMob {
+        padding: 50px 40px;
+    }
+
+    @include desktop {
+        padding: 100px 0 40px;
+    }
+
+    &__top {
+        display: none;
+
+        @include laptop {
+            display: flex;
+            gap: 30px;
+            padding-bottom: 40px;
+
+            @include desktop {
+                gap: 100px;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        width: 181px;
+        height: 45px;
+
+        @include desktop {
+            width: 301px;
+            height: 75px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 30px;
+
+        @include desktop {
+            gap: 66px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &-title {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__bottom {
+        border-top: 2px solid $light-grey;
+        padding-top: 30px;
+
+        @include tablet {
+            padding-top: 40px;
+        }
+    }
+}
