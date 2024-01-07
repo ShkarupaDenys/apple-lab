@@ -1,0 +1,36 @@
+.team {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: 40px;
+        box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include largeMob {
+            padding: 20px 35px;
+        }
+
+        @include tablet {
+            gap: 14px;
+            padding: 20px;
+        }
+
+        @include laptop {
+            padding: 30px;
+        }
+    }
+}
