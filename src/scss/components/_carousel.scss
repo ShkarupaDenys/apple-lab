@@ -1,0 +1,28 @@
+.glide {
+    &__track {
+        overflow: initial;
+
+        @include tablet {
+            overflow: hidden;
+            margin: 0 45px;
+        }
+    }
+
+    &__arrow {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 20px;
+            height: 40px;
+
+            &--right {
+                right: 0;
+                transform: translate(0, -50%) rotate(180deg);
+            }
+        }
+    }
+}
