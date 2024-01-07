@@ -2,7 +2,7 @@
     padding-top: 32px;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 150;
     width: 100%;
     transition: padding linear 0.3s;
 
@@ -29,6 +29,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
+        position: relative;
 
         @include laptop {
             grid-template-columns: repeat(4, 1fr);
@@ -61,13 +62,37 @@
         }
     }
 
-    &__button-mail,
-    &__nav-button {
+    &__button-mail {
         display: none;
 
         @include laptop {
             width: max-content;
             display: inline-flex;
+        }
+    }
+
+    &__nav-button {
+        position: relative;
+        display: none;
+
+        cursor: pointer;
+
+        @include desktop {
+            width: max-content;
+            display: inline-flex;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 10px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        &:hover .navigation {
+            display: block;
         }
     }
 
