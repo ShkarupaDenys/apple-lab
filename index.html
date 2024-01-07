@@ -21,8 +21,8 @@
     
     <title>Vite Build</title>
     <script type="module" crossorigin src="/apple-lab/assets/vendor.4fe26b01.js"></script>
-    <script type="module" crossorigin src="/apple-lab/assets/slider.8e958382.js"></script>
-    <link rel="stylesheet" href="/apple-lab/assets/slider.fab947cd.css">
+    <script type="module" crossorigin src="/apple-lab/assets/map.fe0d765a.js"></script>
+    <link rel="stylesheet" href="/apple-lab/assets/map.27537680.css">
   </head>
   <body>
     <!--    HEADER    -->
@@ -36,14 +36,143 @@
               alt="Apple Lab"
             />
           </a>
-          <button class="header-nav-button header__nav-button">
+          <div class="header-nav-button header__nav-button">
             <span class="header-nav-button__text p7">Выбрать девайс</span>
             <img
               class="header-nav-button__icon"
               src="/apple-lab/assets/arrow.f426b8db.svg"
               alt="header-nav-button"
             />
-          </button>
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey selected"
+                    data-tab-content-id="navigation-content-iPhone-nav"
+                    id="navigation-btn-iPhone"
+                  >
+                    iPhone
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-iPad-nav"
+                    id="navigation-btn-iPad"
+                  >
+                    iPad
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-MacBook-nav"
+                    id="navigation-btn-MacBook"
+                  >
+                    MacBook
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-MacMini-nav"
+                    id="navigation-btn-MacMini"
+                  >
+                    Mac Mini
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-iMac-nav"
+                    id="navigation-btn-iMac"
+                  >
+                    iMac
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-Watch-nav"
+                    id="navigation-btn-Watch"
+                  >
+                    Watch
+                  </button>
+                </li>
+                <li class="navigation__item">
+                  <button
+                    class="navigation__btn p4 font-grey"
+                    data-tab-content-id="navigation-content-all-nav"
+                    id="navigation-btn-all"
+                  >
+                    Гаджеты apple
+                  </button>
+                </li>
+              </ul>
+              <div
+                class="navigation__content hidden"
+                id="models-content-iPhone-nav"
+              >
+                <ul class="navigation__content-list">
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro Max</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Pro</a>
+                  </li>
+                  <li class="navigation__content-item">
+                    <a class="p1" href="/">iPhone 15 Plus</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+
           <div class="languages header__languages">
             <a class="languages__link languages__link--active p7" href="/"
               >UA</a
@@ -1061,5 +1190,307 @@
         </div>
       </div>
     </section>
+
+    <!--    LOCATIONS    -->
+    <section class="locations">
+      <div class="container">
+        <div class="locations__grid">
+          <h2 class="h3 locations__heading">Как нас найти?</h2>
+          <div id="map" class="locations__map"></div>
+          <ul class="accordion locations__accordion">
+            <li class="accordion__item">
+              <button class="accordion__head active">
+                <div class="accordion__title">
+                  <h5 class="h5">Киев</h5>
+                </div>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content active">
+                <ul class="accordion__content-list">
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head">
+                <div class="accordion__title">
+                  <h5 class="h5">Харьков</h5>
+                </div>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <ul class="accordion__content-list">
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head">
+                <div class="accordion__title">
+                  <h5 class="h5">Днепр</h5>
+                </div>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <ul class="accordion__content-list">
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head">
+                <div class="accordion__title">
+                  <h5 class="h5">Одесса</h5>
+                </div>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <ul class="accordion__content-list">
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head">
+                <div class="accordion__title">
+                  <h5 class="h5">Львов</h5>
+                </div>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content">
+                <ul class="accordion__content-list">
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--    FOOTER    -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="footer__logo">
+            <img
+              class="footer__logo-img"
+              src="/apple-lab/assets/logo.530da733.svg"
+              alt="AppleLab"
+            />
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="p7 p7--500 footer__nav-title">РЕМОНТ</li>
+              <li>
+                <a class="p7" href="/">Ремонт iPhone</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Ремонт MacBook</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Ремонт MacBook</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Ремонт iMac</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Ремонт Гаджеты Apple</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Ремонт Android</a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="p7 p7--500 footer__nav-title">ИНФОРМАЦИЯ</li>
+              <li>
+                <a class="p7" href="/">Вакансии</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Статьи</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Блог</a>
+              </li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="p7 p7--500 footer__nav-title">О НАС</li>
+              <li>
+                <a class="p7" href="/">Контакты</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Преимущества</a>
+              </li>
+              <li>
+                <a class="p7" href="/">Наша Миссия</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2010–2024 <br />
+            Сервисный центр AppleLabСайт носит информационный характер
+            и не является публичной офертой. Указанные товарные знаки
+            и продукция маркированая знаками для товаров используются
+            исключительно для предоставления информации пользователям о товаре.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--    GOOGLE MAP    -->
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = 'The Google Maps JavaScript API',
+          c = 'google',
+          l = 'importLibrary',
+          q = '__ib__',
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement('script'));
+              e.set('libraries', [...r] + '');
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => '_' + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set('callback', c + '.maps.' + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + ' could not load.')));
+              a.nonce = m.querySelector('script[nonce]')?.nonce || '';
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + ' only loads once. Ignoring:', g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({ key: 'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg', v: 'weekly' });
+    </script>
   </body>
 </html>
