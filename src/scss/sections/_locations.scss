@@ -1,12 +1,12 @@
 .locations {
-    padding-top: 10px;
+    padding: 10px 0 50px;
 
     @include tablet {
-        padding-top: 40px;
+        padding: 40px 0 50px;
     }
 
     @include desktop {
-        padding-top: 60px;
+        padding: 60px 0 100px;
     }
 
     &__grid {
