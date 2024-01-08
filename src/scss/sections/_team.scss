@@ -1,5 +1,6 @@
 .team {
     padding-top: 50px;
+    overflow: hidden;
 
     @include desktop {
         padding-top: 100px;

@@ -17,6 +17,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: $font-grey-color;
+
+        &.active {
+            color: initial;
+        }
     }
 
     &__content {
