@@ -3,10 +3,14 @@
     background-color: $white;
     padding: 40px;
     width: max-content;
+    height: 650px;
     border-radius: 35px;
     top: calc(100% + 10px);
     background-color: $white;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.2s;
+    filter: blur(8px);
     left: -200px;
 
     &__list {
@@ -32,7 +36,7 @@
         transition: all linear 0.3s;
         border-radius: 40px;
 
-        &.selected {
+        .active & {
             color: $font-color;
             background: $primary;
             color: $btn-text-color;
@@ -41,6 +45,16 @@
 
     &__content {
         padding-top: 30px;
+        display: none;
+
+        .active & {
+            display: flex;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            height: 100%;
+            width: max-content;
+        }
 
         &-list {
             display: grid;
@@ -48,8 +62,11 @@
             grid-auto-flow: column;
             grid-template-rows: repeat(10, auto);
             column-gap: 35px;
-            //max-height: 440px;
             row-gap: 15px;
+        }
+
+        &-item {
+            @include hover("color", $primary);
         }
     }
 }

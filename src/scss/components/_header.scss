@@ -92,7 +92,15 @@
         }
 
         &:hover .navigation {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            filter: blur(0px);
+        }
+
+        &:hover {
+            .header-nav-button__icon {
+                rotate: (180deg);
+            }
         }
     }
 
