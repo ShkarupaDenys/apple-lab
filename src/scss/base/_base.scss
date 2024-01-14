@@ -13,4 +13,8 @@ body {
     line-height: normal;
     color: $font-color;
     background-color: $dark-white;
+
+    &.overflow {
+        overflow: hidden;
+    }
 }

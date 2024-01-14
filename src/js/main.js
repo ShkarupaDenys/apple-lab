@@ -4,3 +4,4 @@ import './article';
 import './slider';
 import './accordion';
 import './map';
+import './mobile-menu';
