@@ -1,5 +1,5 @@
-const characteristicsListElem = document.querySelector('.locations__accordion');
-const characteristicsItemElems = document.querySelectorAll('.locations__accordion .accordion__item');
+const characteristicsListElem = document.querySelector('.faq__accordion');
+const characteristicsItemElems = document.querySelectorAll('.faq__accordion .accordion__item');
 
 characteristicsItemElems.forEach(elem => {
   if (elem.children[1].classList.contains('active')) {
@@ -15,6 +15,7 @@ const open = (button, dropDown) => {
 };
 
 const close = (button, dropDown) => {
+    console.log(button);
   button.classList.remove('active');
   dropDown.classList.remove('active');
   dropDown.style.height = '';
@@ -31,8 +32,6 @@ const closeAllDrops = (button, dropDown) => {
 characteristicsListElem.addEventListener('click', (event) => {
   const target = event.target;
   const head = target.closest('.accordion__head');
-
-  console.log(head);
 
   if (!head) {
     return;

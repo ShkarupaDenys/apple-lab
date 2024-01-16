@@ -32,6 +32,21 @@
             background: none;
             box-shadow: none;
         }
+
+        &--with-carousel {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+
+            @include tablet {
+                flex-direction: column;
+            }
+
+            @include desktop {
+                display: grid;
+                gap: 20px;
+            }
+        }
     }
 
     &__content {
@@ -40,8 +55,33 @@
         gap: 30px;
     }
 
+    &__heading {
+        &--mob {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &--tablet {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
+
     &__sub-title {
         max-width: 535px;
+
+        &--tablet {
+            display: none;
+
+            @include tablet {
+                display: block;
+                max-width: 100%;
+            }
+        }
     }
 
     &__list {
@@ -107,5 +147,17 @@
 
     &__img {
         width: 100%;
+    }
+
+    &__slide {
+        padding: 0 30px;
+
+        @include largeMob {
+            padding: 0 50px;
+        }
+
+        @include tablet {
+            padding: 0;
+        }
     }
 }

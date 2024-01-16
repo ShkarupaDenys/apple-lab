@@ -1,0 +1,17 @@
+.faq {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include desktop {
+            gap: 50px;
+        }
+    }
+}

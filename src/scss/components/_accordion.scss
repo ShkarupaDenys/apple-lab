@@ -24,6 +24,15 @@
         }
     }
 
+    &__title {
+        display: flex;
+        gap: 20px;
+
+        &-icon {
+            display: flex;
+        }
+    }
+
     &__content {
         height: 0;
         overflow: hidden;
@@ -34,6 +43,7 @@
             flex-direction: column;
             gap: 15px;
             padding-top: 20px;
+            max-width: 95%;
         }
 
         &-item {
