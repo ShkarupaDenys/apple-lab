@@ -1,10 +1,12 @@
 .glide {
     &__track {
-        overflow: initial;
+        &--team {
+            overflow: initial;
 
-        @include tablet {
-            overflow: hidden;
-            margin: 0 45px;
+            @include tablet {
+                overflow: hidden;
+                margin: 0 45px;
+            }
         }
     }
 
@@ -23,6 +25,24 @@
                 right: 0;
                 transform: translate(0, -50%) rotate(180deg);
             }
+        }
+    }
+
+    &__bullets {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    &__bullet {
+        height: 6px;
+        background-color: $light-grey;
+        border-radius: 20px;
+        margin-top: 24px;
+        transition: all linear 0.2s;
+
+        &--active {
+            background-color: $primary;
         }
     }
 }
