@@ -8,6 +8,22 @@
         background-color: $white;
         box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
         padding: 15px 30px;
+
+        &.active {
+            border-radius: 20px;
+        }
+
+        &--price {
+            padding: 10px;
+
+            @include tablet {
+                padding: 15px 30px;
+
+                &.active {
+                    padding: 30px;
+                }
+            }
+        }
     }
 
     &__head {
@@ -23,15 +39,28 @@
         &.active {
             color: initial;
         }
+
+        &--price {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr 15px;
+            gap: 12px;
+        }
     }
 
     &__title {
         display: flex;
+        align-items: center;
         gap: 20px;
         text-align: left;
         font-size: 16px;
         font-weight: 600;
         line-height: normal;
+
+        &--price {
+            font-weight: 400;
+            color: $font-color;
+            font-size: 13px;
+        }
 
         @include largeMob {
             font-size: 20px;
@@ -85,11 +114,45 @@
             @include tablet {
                 font-size: 24px;
             }
+
+            &--price {
+                max-width: 100%;
+                gap: 0;
+                font-weight: 600;
+                font-size: 13px;
+
+                @include largeMob {
+                    font-size: 20px;
+                }
+
+                @include tablet {
+                    font-size: 24px;
+                }
+            }
         }
 
         &-item {
             display: flex;
             gap: 15px;
+
+            &-title {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            &--price {
+                display: grid;
+                grid-template-columns: 3fr 1fr 1fr 15px;
+                gap: 12px;
+                align-items: center;
+                padding: 17px 0;
+                border-bottom: 3px solid $light-grey;
+
+                &:first-child {
+                    border-top: 3px solid $light-grey;
+                }
+            }
         }
 
         &-icon {
@@ -121,5 +184,12 @@
                 rotate: (0deg);
             }
         }
+    }
+
+    &__icon-info {
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
+        cursor: pointer;
     }
 }

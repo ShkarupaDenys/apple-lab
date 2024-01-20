@@ -15,7 +15,6 @@ const open = (button, dropDown) => {
 };
 
 const close = (button, dropDown) => {
-    console.log(button);
   button.classList.remove('active');
   dropDown.classList.remove('active');
   dropDown.style.height = '';
@@ -29,19 +28,21 @@ const closeAllDrops = (button, dropDown) => {
   })
 }
 
-characteristicsListElem.addEventListener('click', (event) => {
-  const target = event.target;
-  const head = target.closest('.accordion__head');
-
-  if (!head) {
-    return;
-  }
-
-  if (head.classList.contains('accordion__head')) {
-    const parent = target.closest('.accordion__item');
-    const description = parent.querySelector('.accordion__content');
-    description.classList.contains('active') ?
-    close(target, description) :
-    open(head, description);
-  } 
-});
+if (characteristicsListElem) {
+  characteristicsListElem.addEventListener('click', (event) => {
+    const target = event.target;
+    const head = target.closest('.accordion__head');
+  
+    if (!head) {
+      return;
+    }
+  
+    if (head.classList.contains('accordion__head')) {
+      const parent = target.closest('.accordion__item');
+      const description = parent.querySelector('.accordion__content');
+      description.classList.contains('active') ?
+      close(target, description) :
+      open(head, description);
+    } 
+  });
+}

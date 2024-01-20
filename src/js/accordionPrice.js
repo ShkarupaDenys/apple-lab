@@ -1,5 +1,5 @@
-const characteristicsListElem = document.querySelector('.locations__accordion');
-const characteristicsItemElems = document.querySelectorAll('.locations__accordion .accordion__item');
+const characteristicsListElem = document.querySelector('.price__accordion');
+const characteristicsItemElems = document.querySelectorAll('.price__accordion .accordion__item');
 
 characteristicsItemElems.forEach(elem => {
   if (elem.children[1].classList.contains('active')) {
@@ -30,19 +30,21 @@ const closeAllDrops = (button, dropDown) => {
   })
 }
 
-characteristicsListElem.addEventListener('click', (event) => {
-  const target = event.target;
-  const head = target.closest('.accordion__head');
-
-  if (!head) {
-    return;
-  }
-
-  if (head.classList.contains('accordion__head')) {
-    const parent = target.closest('.accordion__item');
-    const description = parent.querySelector('.accordion__content');
-    description.classList.contains('active') ?
-    close(target, description) :
-    open(head, description);
-  } 
-});
+if (characteristicsListElem) {
+  characteristicsListElem.addEventListener('click', (event) => {
+    const target = event.target;
+    const head = target.closest('.accordion__head');
+  
+    if (!head) {
+      return;
+    }
+  
+    if (head.classList.contains('accordion__head')) {
+      const parent = target.closest('.accordion__item');
+      const description = parent.querySelector('.accordion__content');
+      description.classList.contains('active') ?
+      close(target, description) :
+      open(head, description);
+    } 
+  });
+}

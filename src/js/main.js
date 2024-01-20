@@ -1,9 +1,10 @@
 import './header';
-import './tabs';
+import './tabsModels';
 import './tabsMalfunction'
 import './article';
 import './slider';
 import './accordion';
 import './accordionFaq';
+import './accordionPrice';
 import './map';
 import './mobile-menu';

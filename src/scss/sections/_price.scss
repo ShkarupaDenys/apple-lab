@@ -1,0 +1,19 @@
+.price {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__transfer {
+        @include tablet {
+            display: none;
+        }
+    }
+}
