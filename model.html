@@ -19,10 +19,10 @@
 
     
     
-    <title>Vite Build</title>
+    <title>Model page</title>
     <script type="module" crossorigin src="/apple-lab/assets/vendor.4fe26b01.js"></script>
-    <script type="module" crossorigin src="/apple-lab/assets/mobile-menu.0eb3f100.js"></script>
-    <link rel="stylesheet" href="/apple-lab/assets/mobile-menu.cdb1f91e.css">
+    <script type="module" crossorigin src="/apple-lab/assets/mobile-menu.745ebb55.js"></script>
+    <link rel="stylesheet" href="/apple-lab/assets/mobile-menu.362407c7.css">
   </head>
   <body>
     <!--    HEADER    -->
@@ -195,7 +195,7 @@
             >
               <img
                 class="header__contacts-img-phone"
-                src="/apple-lab/assets/phone.b4eb2d52.svg"
+                src="/apple-lab/assets/phone.5727fd7d.svg"
                 alt="Phone"
               />
               <span class="header__contacts-text p7">099 282 87 87</span>
@@ -344,7 +344,7 @@
               <a class="mobile-menu__contact-link" href="tel:+380732828787">
                 <img
                   class="mobile-menu__contact-icon"
-                  src="/apple-lab/assets/phone.b4eb2d52.svg"
+                  src="/apple-lab/assets/phone.5727fd7d.svg"
                   alt="073 282 87 87"
                 />
                 <span class="p8">073 282 87 87</span></a
@@ -354,7 +354,7 @@
               <a class="mobile-menu__contact-link" href="tel:+380992828787">
                 <img
                   class="mobile-menu__contact-icon"
-                  src="/apple-lab/assets/phone.b4eb2d52.svg"
+                  src="/apple-lab/assets/phone.5727fd7d.svg"
                   alt="099 282 87 87"
                 />
                 <span class="p8">073 282 87 87</span></a
@@ -364,7 +364,7 @@
               <a class="mobile-menu__contact-link" href="tel:+380682828787">
                 <img
                   class="mobile-menu__contact-icon"
-                  src="/apple-lab/assets/phone.b4eb2d52.svg"
+                  src="/apple-lab/assets/phone.5727fd7d.svg"
                   alt="073 282 87 87"
                 />
                 <span class="p8">068 282 87 87</span></a
@@ -1314,6 +1314,91 @@
       </div>
     </section>
 
+    <!--    MALFUNCTION    -->
+    <section class="malfunction">
+      <div class="container">
+        <div class="malfunction__wrap">
+          <h2 class="malfunction__heading h3">Выберите неисправность</h2>
+          <ul class="malfunction__list">
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-common"
+                id="malfunction-btn-common"
+              >
+                Общие поломки
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-sound"
+                id="malfunction-btn-sound"
+              >
+                Звук
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-screen-and-body"
+                id="malfunction-btn-screen-and-body"
+              >
+                Экран и корпус
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-camera"
+                id="malfunction-btn-camera"
+              >
+                Камера
+              </button>
+            </li>
+          </ul>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-common"
+          >
+            <a href="/" class="malfunction__link">Не включается</a>
+            <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
+            <a href="/" class="malfunction__link">Не включается</a>
+            <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-sound"
+          >
+            <a href="/" class="malfunction__link">Не включается Звук</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-screen-and-body"
+          >
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-camera"
+          >
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">camera</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--    ARTICLE    -->
     <article class="article">
       <div class="container">
@@ -1528,17 +1613,17 @@
               <div class="accordion__title">
                 <div class="accordion__title-icon">
                   <img
-                    src="/apple-lab/assets/settings.04529817.svg"
+                    src="/apple-lab/assets/settings.376c03ed.svg"
                     alt="Какую запчасть устанавливаете?"
                   />
                 </div>
-                <h5 class="h5">Какую запчасть устанавливаете?</h5>
+                <h5>Какую запчасть устанавливаете?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1552,16 +1637,16 @@
             <button class="accordion__head">
               <div class="accordion__title">
                 <img
-                  src="/apple-lab/assets/price.aa67551e.svg"
+                  src="/apple-lab/assets/price.a2b8fff3.svg"
                   alt="Какая стоимость замены стекла iPhone 11"
                 />
-                <h5 class="h5">Какая стоимость замены стекла iPhone 11</h5>
+                <h5>Какая стоимость замены стекла iPhone 11</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1575,18 +1660,16 @@
             <button class="accordion__head">
               <div class="accordion__title">
                 <img
-                  src="/apple-lab/assets/clock.c00ceedc.svg"
+                  src="/apple-lab/assets/clock.661a3882.svg"
                   alt="Сколько времени производится ремонт iPhone 11 в Киеве?"
                 />
-                <h5 class="h5">
-                  Сколько времени производится ремонт iPhone 11 в Киеве?
-                </h5>
+                <h5>Сколько времени производится ремонт iPhone 11 в Киеве?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1600,16 +1683,16 @@
             <button class="accordion__head">
               <div class="accordion__title">
                 <img
-                  src="/apple-lab/assets/guarantee.70b2de6c.svg"
+                  src="/apple-lab/assets/guarantee.0bd53a4b.svg"
                   alt="Какая гарантия на ремонт iPhone 11?"
                 />
-                <h5 class="h5">Какая гарантия на ремонт iPhone 11?</h5>
+                <h5>Какая гарантия на ремонт iPhone 11?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1718,7 +1801,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      src="/apple-lab/assets/clock.661a3882.svg"
                       alt="Adress"
                     />
                     <p class="p2">Пн-Сб с 10:00 до 19:00</p>
@@ -1726,7 +1809,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      src="/apple-lab/assets/phone.5727fd7d.svg"
                       alt="Adress"
                     />
                     <a href="tel:+380732828787" class="p2">073 282 87 87</a>
@@ -1754,7 +1837,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      src="/apple-lab/assets/clock.661a3882.svg"
                       alt="Adress"
                     />
                     <p class="p2">Пн-Сб с 10:00 до 19:00</p>
@@ -1762,7 +1845,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      src="/apple-lab/assets/phone.5727fd7d.svg"
                       alt="Adress"
                     />
                     <a href="tel:+380732828787" class="p2">073 282 87 87</a>
@@ -1790,7 +1873,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      src="/apple-lab/assets/clock.661a3882.svg"
                       alt="Adress"
                     />
                     <p class="p2">Пн-Сб с 10:00 до 19:00</p>
@@ -1798,7 +1881,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      src="/apple-lab/assets/phone.5727fd7d.svg"
                       alt="Adress"
                     />
                     <a href="tel:+380732828787" class="p2">073 282 87 87</a>
@@ -1826,7 +1909,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      src="/apple-lab/assets/clock.661a3882.svg"
                       alt="Adress"
                     />
                     <p class="p2">Пн-Сб с 10:00 до 19:00</p>
@@ -1834,7 +1917,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      src="/apple-lab/assets/phone.5727fd7d.svg"
                       alt="Adress"
                     />
                     <a href="tel:+380732828787" class="p2">073 282 87 87</a>
@@ -1862,7 +1945,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/clock.c00ceedc.svg"
+                      src="/apple-lab/assets/clock.661a3882.svg"
                       alt="Adress"
                     />
                     <p class="p2">Пн-Сб с 10:00 до 19:00</p>
@@ -1870,7 +1953,7 @@
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
-                      src="/apple-lab/assets/phone.b4eb2d52.svg"
+                      src="/apple-lab/assets/phone.5727fd7d.svg"
                       alt="Adress"
                     />
                     <a href="tel:+380732828787" class="p2">073 282 87 87</a>
