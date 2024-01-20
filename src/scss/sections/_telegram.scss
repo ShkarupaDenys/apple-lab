@@ -1,0 +1,36 @@
+.telegram {
+    background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+
+    &--mt {
+        margin-top: 30px;
+
+        @include desktop {
+            margin-top: 45px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 0;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 22px;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        @include laptop {
+            padding: 50px 0;
+        }
+    }
+
+    &__btn {
+        @include tablet {
+            min-width: 301px;
+        }
+    }
+}
