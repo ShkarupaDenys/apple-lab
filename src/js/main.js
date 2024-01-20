@@ -1,5 +1,6 @@
 import './header';
 import './tabs';
+import './tabsMalfunction'
 import './article';
 import './slider';
 import './accordion';

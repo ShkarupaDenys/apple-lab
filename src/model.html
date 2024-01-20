@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./scss/style.scss" />
     <script type="module" defer src="./js/main.js"></script>
-    <title>Vite Build</title>
+    <title>Model page</title>
   </head>
   <body>
     <!--    HEADER    -->
@@ -1338,6 +1338,91 @@
       </div>
     </section>
 
+    <!--    MALFUNCTION    -->
+    <section class="malfunction">
+      <div class="container">
+        <div class="malfunction__wrap">
+          <h2 class="malfunction__heading h3">Выберите неисправность</h2>
+          <ul class="malfunction__list">
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-common"
+                id="malfunction-btn-common"
+              >
+                Общие поломки
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-sound"
+                id="malfunction-btn-sound"
+              >
+                Звук
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-screen-and-body"
+                id="malfunction-btn-screen-and-body"
+              >
+                Экран и корпус
+              </button>
+            </li>
+            <li class="malfunction__item">
+              <button
+                class="malfunction__btn p4 font-grey"
+                data-tab-content-id="malfunction-content-camera"
+                id="malfunction-btn-camera"
+              >
+                Камера
+              </button>
+            </li>
+          </ul>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-common"
+          >
+            <a href="/" class="malfunction__link">Не включается</a>
+            <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
+            <a href="/" class="malfunction__link">Не включается</a>
+            <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-sound"
+          >
+            <a href="/" class="malfunction__link">Не включается Звук</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-screen-and-body"
+          >
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">screen-and-body</a>
+          </div>
+          <div
+            class="malfunction__grid malfunction__content hidden"
+            id="malfunction-content-camera"
+          >
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">camera</a>
+            <a href="/" class="malfunction__link">Ремонт Звук</a>
+            <a href="/" class="malfunction__link">camera</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--    ARTICLE    -->
     <article class="article">
       <div class="container">
@@ -1580,13 +1665,13 @@
                     alt="Какую запчасть устанавливаете?"
                   />
                 </div>
-                <h5 class="h5">Какую запчасть устанавливаете?</h5>
+                <h5>Какую запчасть устанавливаете?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1603,13 +1688,13 @@
                   src="./img/icons/price.svg"
                   alt="Какая стоимость замены стекла iPhone 11"
                 />
-                <h5 class="h5">Какая стоимость замены стекла iPhone 11</h5>
+                <h5>Какая стоимость замены стекла iPhone 11</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1626,15 +1711,13 @@
                   src="./img/icons/clock.svg"
                   alt="Сколько времени производится ремонт iPhone 11 в Киеве?"
                 />
-                <h5 class="h5">
-                  Сколько времени производится ремонт iPhone 11 в Киеве?
-                </h5>
+                <h5>Сколько времени производится ремонт iPhone 11 в Киеве?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
@@ -1651,13 +1734,13 @@
                   src="./img/icons/guarantee.svg"
                   alt="Какая гарантия на ремонт iPhone 11?"
                 />
-                <h5 class="h5">Какая гарантия на ремонт iPhone 11?</h5>
+                <h5>Какая гарантия на ремонт iPhone 11?</h5>
               </div>
               <span class="accordion__icon"></span>
             </button>
             <div class="accordion__content">
               <div class="accordion__content-list">
-                <p class="p2">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cupiditate dignissimos deserunt laboriosam debitis
                   repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
