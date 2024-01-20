@@ -1,6 +1,6 @@
-//  malfunction tabs
-const tabButtons = document.querySelectorAll(".malfunction__btn");
-const tabs = document.querySelectorAll(".malfunction__content");
+//  models tabs
+const tabButtons = document.querySelectorAll(".models__btn");
+const tabs = document.querySelectorAll(".models__content");
 
 if (tabButtons.length) {
   tabButtons[0].classList.toggle("selected", true);
@@ -22,6 +22,5 @@ if (tabButtons.length) {
       });
       selectedTab.classList.toggle("hidden", false);
     });
-  });   
+  });
 }
-

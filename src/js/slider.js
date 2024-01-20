@@ -25,19 +25,8 @@ const team = new Glide('.team__carousel', {
     perView: 1,
     gap: 40,
     breakpoints: {
-        //1024: {
-        //    perView: 3
-        //  },
-          //768: {
-          //  gap: 80,
-          //}
-         //  768: {
-        //    perView: 2,
-        //  }
     }
   })
-
-  console.log(heroScreen);
 
   if (heroScreen) {
     heroScreenGlide.mount()
