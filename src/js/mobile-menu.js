@@ -1,4 +1,4 @@
-const categories = document.querySelectorAll('.mobile-menu__category');
+const categories = document.querySelectorAll('.mobile-menu__category-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 const bg = document.querySelector('.mobile-menu__background');
 
