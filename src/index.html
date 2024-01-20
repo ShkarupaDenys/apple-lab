@@ -49,7 +49,7 @@
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
-                        <a class="p1" href="./model.html">iPhone 15 Pro Max</a>
+                        <a class="p1" href="./model.html">iPhone 11</a>
                       </li>
                       <li class="navigation__content-item">
                         <a class="p1" href="/">iPhone 15 Pro</a>
@@ -178,25 +178,110 @@
             <a class="languages__link p7" href="/">EN</a>
           </div>
           <div class="header__contacts">
-            <a href="/" class="header__contacts-geo header__contacts-link">
-              <img
-                class="header__contacts-img-geo"
-                src="./img/icons/geo.svg"
-                alt="City"
-              />
-              <span class="header__contacts-text p7">Київ</span>
-            </a>
-            <a
-              href="tel:+380669739993"
-              class="header__contacts-phone header__contacts-link"
-            >
-              <img
-                class="header__contacts-img-phone"
-                src="./img/icons/phone.svg"
-                alt="Phone"
-              />
-              <span class="header__contacts-text p7">099 282 87 87</span>
-            </a>
+            <div class="header__contacts-item">
+              <div class="header__contacts-geo header__contacts-link">
+                <img
+                  class="header__contacts-img-geo"
+                  src="./img/icons/geo.svg"
+                  alt="City"
+                />
+                <span class="header__contacts-text p7">Київ</span>
+              </div>
+              <div class="header__contacts-dropdown">
+                <div class="header__contacts-dropdown-wrap">
+                  <div class="header__contacts-geo header__contacts-link">
+                    <img
+                      class="header__contacts-img-geo"
+                      src="./img/icons/geo.svg"
+                      alt="City"
+                    />
+                    <span class="p7">Київ</span>
+                  </div>
+                  <div class="header__contacts-geo-list">
+                    <a href="/" class="p7">м. Олимпийская</a>
+                    <a href="/" class="p7">м. Позняки</a>
+                    <a href="/" class="p7">м. Минская</a>
+                  </div>
+                </div>
+                <a href="/" class="header__contacts-geo header__contacts-link">
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">Дніпро</span>
+                </a>
+                <a href="/" class="header__contacts-geo header__contacts-link">
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">Львів</span>
+                </a>
+                <a href="/" class="header__contacts-geo header__contacts-link">
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">Харків</span>
+                </a>
+                <a href="/" class="header__contacts-geo header__contacts-link">
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">Одеса</span>
+                </a>
+              </div>
+            </div>
+            <div class="header__contacts-item">
+              <div class="header__contacts-phone header__contacts-link">
+                <img
+                  class="header__contacts-img-phone"
+                  src="./img/icons/phone.svg"
+                  alt="Phone"
+                />
+                <span class="header__contacts-text p7">099 282 87 87</span>
+              </div>
+              <div class="header__contacts-dropdown">
+                <a
+                  href="tel:+380732828787"
+                  class="header__contacts-geo header__contacts-link"
+                >
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">073 282 87 87</span>
+                </a>
+                <a
+                  href="tel:+380992828787"
+                  class="header__contacts-geo header__contacts-link"
+                >
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">099 282 87 87</span>
+                </a>
+                <a
+                  href="tel:+380682828787"
+                  class="header__contacts-geo header__contacts-link"
+                >
+                  <img
+                    class="header__contacts-img-geo"
+                    src="./img/icons/geo.svg"
+                    alt="City"
+                  />
+                  <span class="p7">068 282 87 87</span>
+                </a>
+              </div>
+            </div>
           </div>
           <button class="button button--outline header__button-mail">
             Ремонт по почте
@@ -226,113 +311,126 @@
             <button class="button button--outline">Ремонт по почте</button>
           </div>
           <ul class="mobile-menu__categories">
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-iPhone"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">iPhone</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-iPhone"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-iPad"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">iPad</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-iPad"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-MacBook"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">MacBook</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-MacBook"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-MacMini"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">Mac Mini</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-MacMini"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-Watch"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">Watch</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-Watch"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-all"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
+
                 <span class="p3">Гаджеты apple</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-all"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
           </ul>
           <p class="mobile-menu__contacts-title p2 p2--600">Контакты</p>
@@ -389,7 +487,7 @@
                     alt=""
                     class="mobile-menu__model-img"
                   />
-                  <span class="p5">iPhone 15 Pro Max</span>
+                  <span class="p5">iPhone 11</span>
                 </a>
               </li>
               <li class="mobile-menu__model-item">

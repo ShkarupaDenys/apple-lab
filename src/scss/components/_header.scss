@@ -32,13 +32,14 @@
         position: relative;
 
         @include laptop {
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            //grid-template-columns: repeat(4, 1fr);
             gap: 30px;
         }
 
-        @include desktop {
-            display: flex;
-        }
+        //@include desktop {
+        //    display: flex;
+        //}
     }
 
     &__burger-menu {
@@ -105,30 +106,93 @@
     }
 
     &__contacts {
-        display: none;
+        //display: none;
+        display: flex;
+        gap: 12px;
+        grid-column: 3 / 6;
+
+        &-dropdown {
+            opacity: 0;
+            filter: blur(8px);
+            visibility: hidden;
+            transition: all ease-in-out 0.2s;
+            position: absolute;
+            top: 20px;
+            right: -40px;
+            background-color: $white;
+            box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            gap: 8px;
+            z-index: 10;
+
+            @include desktop {
+                left: -40px;
+                right: auto;
+                border-radius: 40px;
+                padding: 40px;
+                gap: 12px;
+            }
+        }
+
+        &-item {
+            position: relative;
+
+            &:hover {
+                .header__contacts-dropdown {
+                    opacity: 1;
+                    visibility: visible;
+                    filter: blur(0);
+                    top: 0;
+                }
+            }
+        }
 
         &-link {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
             flex-shrink: 0;
+
+            @include hover("color", $primary);
+
+            @include desktop {
+                gap: 15px;
+            }
+        }
+
+        &-dropdown-wrap {
+            &:hover {
+                .header__contacts-geo-list {
+                    display: flex;
+                }
+            }
         }
 
         &-text {
             display: none;
         }
 
-        &-img-geo {
-            @include tablet {
-                width: 30px;
-                height: 30px;
-            }
-        }
+        //&-img-geo {
+        //    @include tablet {
+        //        width: 30px;
+        //        height: 30px;
+        //    }
+        //}
 
-        &-img-phone {
+        &-img-phone,
+        &-img-geo {
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+
             @include tablet {
                 width: 30px;
                 height: 30px;
+                min-width: 30px;
             }
         }
 
@@ -136,6 +200,21 @@
             @include tablet {
                 .header__contacts-text {
                     display: block;
+                }
+            }
+
+            &-list {
+                display: flex;
+                display: none;
+                flex-direction: column;
+                margin: 10px 0;
+                gap: 10px;
+                padding: 10px 0;
+                border-bottom: 1px solid $light-grey;
+                border-top: 1px solid $light-grey;
+
+                a:hover {
+                    color: $primary;
                 }
             }
         }
@@ -156,9 +235,9 @@
             grid-column: 4 / 6;
         }
 
-        @include laptop {
-            display: none;
-        }
+        //@include laptop {
+        //    display: none;
+        //}
 
         @include desktop {
             display: flex;
