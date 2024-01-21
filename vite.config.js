@@ -10,6 +10,7 @@ module.exports = {
         model: resolve(__dirname, './src/model.html'),
         model: resolve(__dirname, './src/category.html'),
         model: resolve(__dirname, './src/fault.html'),
+        model: resolve(__dirname, './src/city.html'),
       },
     }
   },

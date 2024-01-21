@@ -97,6 +97,11 @@
             display: flex;
             flex-direction: row;
         }
+
+        &--column {
+            flex-direction: column;
+            display: flex;
+        }
     }
 
     &__item {
