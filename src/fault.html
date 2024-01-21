@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./scss/style.scss" />
     <script type="module" defer src="./js/main.js"></script>
-    <title>Vite Build</title>
+    <title>Fault page</title>
   </head>
   <body>
     <!--    HEADER    -->
@@ -732,13 +732,22 @@
     <!--    HERO-SCREEN    -->
     <section class="hero-screen">
       <div class="container">
-        <div class="grid grid--desktop hero-screen__wrap">
+        <div
+          class="grid grid--desktop hero-screen__wrap hero-screen__wrap--with-carousel"
+        >
           <div class="grid__item grid__item--1-6">
             <div class="hero-screen__content">
-              <h1 class="h3">Ремонт техники Apple</h1>
-              <p class="p2 hero-screen__sub-title">
-                AppleLab - сеть сервисных центров Apple в Украине. Наша цель —
-                быть лучшими в сфере сервисного обслуживания Apple.
+              <h1 class="hero-screen__heading--tablet h3">
+                Замена стекла камеры iPhone в Киеве
+              </h1>
+              <p
+                class="p2 hero-screen__sub-title hero-screen__sub-title--tablet"
+              >
+                Наш сервисный центр Apple Lab выполняет услугу замены стекла
+                iPhone в Киеве. Вы можете воспользоваться предварительной
+                записью или свяжитесь с нашим менеджером. Мы работаем
+                без выходных и можем оперативно помочь с ремонтом iPhone.
+                Средний срок ремонта составляет 3–4 часа.
               </p>
               <p class="p2 p2--600 font-primary hero-screen__sale">
                 На первый ремонт скидка 5%.
@@ -746,32 +755,6 @@
               <p class="p2 p2--600 font-primary hero-screen__sale-short">
                 Скидка 5%.
               </p>
-              <ul class="hero-screen__list">
-                <li class="hero-screen__item">
-                  <img
-                    src="./img//icons/settings.svg"
-                    alt="settings"
-                    class="hero-screen__item-icon"
-                  />
-                  <span class="hero-screen__item-text p2">ремонт</span>
-                </li>
-                <li class="hero-screen__item">
-                  <img
-                    src="./img/icons/service.svg"
-                    alt="service"
-                    class="hero-screen__item-icon"
-                  />
-                  <span class="hero-screen__item-text p2">обслуживание</span>
-                </li>
-                <li class="hero-screen__item">
-                  <img
-                    src="./img/icons/consultations.svg"
-                    alt="consultations"
-                    class="hero-screen__item-icon"
-                  />
-                  <span class="hero-screen__item-text p2">консультации</span>
-                </li>
-              </ul>
               <div class="hero-screen__actions">
                 <button class="button button--w-100">
                   Записаться на ремонт
@@ -783,599 +766,156 @@
             </div>
           </div>
           <div class="grid__item grid__item--7-12">
-            <picture class="hero-screen__picture">
-              <source
-                srcset="./img/hero-screen/img-desktop.webp"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="./img/hero-screen/img-laptop.webp"
-                media="(min-width: 1024px)"
-              />
-              <source
-                srcset="
-                  ./img/hero-screen/img-tablet.webp,
-                  ./img/hero-screen/img-tablet@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/hero-screen/img-mob-lg.webp,
-                  ./img/hero-screen/img-mob-lg@2x.webp 2x
-                "
-                media="(min-width: 480px)"
-              />
-              <source
-                srcset="
-                  ./img/hero-screen/img-mob.webp,
-                  ./img/hero-screen/img-mob@2x.webp 2x
-                "
-              />
-              <img
-                src="./img/hero-screen/img-desktop.webp"
-                alt="Laptop"
-                class="hero-screen__img"
-              />
-            </picture>
+            <h1 class="hero-screen__heading--mob h3">Ремонт iPhone 11</h1>
+            <div class="glide hero-screen__carousel">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide hero-screen__slide">
+                    <picture class="hero-screen__picture">
+                      <source
+                        srcset="./img/model/iPhone11/img-desktop.webp"
+                        media="(min-width: 1440px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-tablet.webp,
+                          ./img/model/iPhone11/img-tablet@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob-lg.webp,
+                          ./img/model/iPhone11/img-mob-lg@2x.webp 2x
+                        "
+                        media="(min-width: 480px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob.webp,
+                          ./img/model/iPhone11/img-mob@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/model/iPhone11/img-desktop.webp"
+                        alt="Laptop"
+                        class="hero-screen__img"
+                      />
+                    </picture>
+                  </li>
+                  <li class="glide__slide hero-screen__slide">
+                    <picture class="hero-screen__picture">
+                      <source
+                        srcset="./img/model/iPhone11/img-desktop.webp"
+                        media="(min-width: 1440px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-tablet.webp,
+                          ./img/model/iPhone11/img-tablet@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob-lg.webp,
+                          ./img/model/iPhone11/img-mob-lg@2x.webp 2x
+                        "
+                        media="(min-width: 480px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob.webp,
+                          ./img/model/iPhone11/img-mob@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/model/iPhone11/img-desktop.webp"
+                        alt="Laptop"
+                        class="hero-screen__img"
+                      />
+                    </picture>
+                  </li>
+                  <li class="glide__slide hero-screen__slide">
+                    <picture class="hero-screen__picture">
+                      <source
+                        srcset="./img/model/iPhone11/img-desktop.webp"
+                        media="(min-width: 1440px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-tablet.webp,
+                          ./img/model/iPhone11/img-tablet@2x.webp 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob-lg.webp,
+                          ./img/model/iPhone11/img-mob-lg@2x.webp 2x
+                        "
+                        media="(min-width: 480px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/model/iPhone11/img-mob.webp,
+                          ./img/model/iPhone11/img-mob@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./img/model/iPhone11/img-desktop.webp"
+                        alt="Laptop"
+                        class="hero-screen__img"
+                      />
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--    MODELS    -->
-    <section class="models">
+    <!--    PRICE-LIST    -->
+    <section class="price-list">
       <div class="container">
-        <h2 class="models__heading h3">Выберите модель</h2>
-        <ul class="models__list">
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-iPhone"
-              id="models-btn-iPhone"
-            >
-              iPhone
-            </button>
+        <h2 class="price-list__heading h3">
+          Стоимость, Замена стекла и экрана на iPhone в Киеве
+        </h2>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <span class="p5">Модель</span>
+            <span class="p5 text-center">Цена, грн.</span>
           </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-iPad"
-              id="models-btn-iPad"
-            >
-              iPad
-            </button>
+          <li class="price-list__item">
+            <span class="h8">iPhone 14 Pro Max</span>
+            <span class="h8 text-center">5300</span>
           </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-MacBook"
-              id="models-btn-MacBook"
-            >
-              MacBook
-            </button>
+          <li class="price-list__item">
+            <span class="h8">iPhone 14 Pro</span>
+            <span class="h8 text-center">4900</span>
           </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-MacMini"
-              id="models-btn-MacMini"
-            >
-              Mac Mini
-            </button>
+          <li class="price-list__item">
+            <span class="h8">iPhone 14 Pro Max</span>
+            <span class="h8 text-center">5300</span>
           </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-iMac"
-              id="models-btn-iMac"
-            >
-              iMac
-            </button>
+          <li class="price-list__item">
+            <span class="h8">iPhone 14 Pro</span>
+            <span class="h8 text-center">4900</span>
           </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-Watch"
-              id="models-btn-Watch"
-            >
-              Watch
-            </button>
-          </li>
-          <li class="models__item">
-            <button
-              class="models__btn p4 font-grey"
-              data-tab-content-id="models-content-all"
-              id="models-btn-all"
-            >
-              Гаджеты apple
-            </button>
+          <li class="price-list__item">
+            <span class="h8">iPhone 14 Pro</span>
+            <span class="h8 text-center">4900</span>
           </li>
         </ul>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-iPhone"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-iPad"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPad Pro</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-MacBook"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iPhone 15 Pro Max</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">MacBook</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-MacMini"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Mac Mini</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-iMac"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">iMac</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-Watch"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">Watch</p>
-          </a>
-        </div>
-        <div
-          class="models__grid models__content hidden"
-          id="models-content-all"
-        >
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-          <a href="/" class="models__card">
-            <img
-              src="./img/models/model-1.webp"
-              alt="models"
-              class="models__card-img"
-            />
-            <p class="p4 models__card-title">All gadgets</p>
-          </a>
-        </div>
-        <div class="models__actions">
+        <div class="price-list__actions">
           <button class="button button--outline">Посмотреть все модели</button>
         </div>
       </div>
@@ -1387,19 +927,16 @@
         <div class="article__wrap article__wrap--hidden">
           <div class="article__section">
             <div class="article__section-box">
-              <h2 class="h3">AppleLab - Сервисный центр Apple в Киеве</h2>
+              <h2 class="h3">Замена стекла и экрана на iPhone в Киеве</h2>
               <p class="p4">
-                Продукция Apple популярна среди миллиарда жителей благодаря
-                своей высокой производительности и низким процентом брака.
-                Она давно стала неотъемлемой частью жизни и рабочим
-                инструментом, именно по этой причине выход из строя гаджета
-                зачастую является критической проблемой в современном мире.
-                В основном, 80% причин поломок техники Эпл является физическое
-                повреждение устройства. На сегодняшний день наш сервисный центр,
-                является единственной украинской сетью обслуживания Apple,
-                у которого есть филиалы в Киеве, Харькове Днепре и Львове.
-                Почему же, Мы, можем смело заявить, что претендуем на лидера
-                ниши сервисных центров Apple в Украине?
+                Наиболее распространённая поломка iPhone – повреждение экрана.
+                После падения с высоты и других механических повреждений
+                на экране появляются глубокие царапины, трещины и сколы.
+                При этом экран может продолжать работать корректно. Но возможны
+                повреждения, после которых экран не включается или не реагирует
+                на нажатия. Это может быть как повреждение самого LCD,
+                так и повреждения на материнской плате. Ниже мы рассмотрим
+                по‑подробней каждый нюанс, касательно разбитых дисплеев Айфона:
               </p>
               <picture class="article__picture">
                 <source
@@ -1609,70 +1146,87 @@
       </div>
     </article>
 
-    <!--    CTA    -->
-    <section class="cta">
-      <div class="container">
-        <div class="cta__wrap">
-          <div class="cta__grid">
-            <div class="cta__title-box">
-              <h2 class="h3">
-                Не нашли,то <br class="cta__transfer" />
-                что искали?
-              </h2>
-              <p class="p4">
-                Лаборатория Apple поможет решить вашу проблему. Оставте ваши
-                данные и с вами свяжуться для консультации
-              </p>
+    <!--    FAQ    -->
+    <section class="faq">
+      <div class="container faq__wrap">
+        <h2 class="h3">
+          Часто задаваемые вопросы о ремонте iPhone 15 Pro Max в Днепре
+        </h2>
+        <ul class="accordion faq__accordion">
+          <li class="accordion__item">
+            <button class="accordion__head">
+              <div class="accordion__title">
+                <div class="accordion__title-icon">
+                  <img
+                    src="./img/icons/settings.svg"
+                    alt="Какую запчасть устанавливаете?"
+                  />
+                </div>
+                <h5>
+                  Как долго производится замена Замена стекла iPhone в Киеве?
+                </h5>
+              </div>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__content">
+              <div class="accordion__content-list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dignissimos deserunt laboriosam debitis
+                  repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
+                  officiis ad ab optio nihil commodi fugit deleniti id
+                  inventore.
+                </p>
+              </div>
             </div>
-            <picture class="cta__picture">
-              <source
-                srcset="./img/cta/img-desktop.webp"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="./img/cta/img-laptop.webp"
-                media="(min-width: 1024px)"
-              />
-              <source
-                srcset="
-                  ./img/cta/img-tablet.webp,
-                  ./img/cta/img-tablet@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
-                  ./img/cta/img-mob-lg.webp,
-                  ./img/cta/img-mob-lg@2x.webp 2x
-                "
-                media="(min-width: 480px)"
-              />
-              <source
-                srcset="./img/cta/img-mob.webp, ./img/cta/img-mob@2x.webp 2x"
-              />
-              <img
-                src="./img/cta/img-desktop.webp"
-                alt="Laptop"
-                class="cta__img"
-              />
-            </picture>
-            <form class="cta__form" method="post" action="">
-              <input
-                type="text"
-                class="field cta__field"
-                placeholder="Ваше имя"
-              />
-              <input
-                type="text"
-                class="field cta__field"
-                placeholder="Ваш номер телефона"
-              />
-              <button class="button button--w-100 cta__button">
-                Записаться на ремонт
-              </button>
-            </form>
-          </div>
-        </div>
+          </li>
+          <li class="accordion__item">
+            <button class="accordion__head">
+              <div class="accordion__title">
+                <img
+                  src="./img/icons/price.svg"
+                  alt="Какая стоимость замены стекла iPhone 11"
+                />
+                <h5>Какая стоимость Замена стекла iPhone?</h5>
+              </div>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__content">
+              <div class="accordion__content-list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dignissimos deserunt laboriosam debitis
+                  repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
+                  officiis ad ab optio nihil commodi fugit deleniti id
+                  inventore.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__item">
+            <button class="accordion__head">
+              <div class="accordion__title">
+                <img
+                  src="./img/icons/guarantee.svg"
+                  alt="Какая гарантия на ремонт iPhone 11?"
+                />
+                <h5>Какая гарантия на Замена стекла iPhone в Киеве?</h5>
+              </div>
+              <span class="accordion__icon"></span>
+            </button>
+            <div class="accordion__content">
+              <div class="accordion__content-list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dignissimos deserunt laboriosam debitis
+                  repudiandae. Recusandae ipsam quaerat, voluptatem odio earum
+                  officiis ad ab optio nihil commodi fugit deleniti id
+                  inventore.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -2006,44 +1560,5 @@
         </div>
       </div>
     </footer>
-
-    <!--    GOOGLE MAP    -->
-    <script>
-      ((g) => {
-        var h,
-          a,
-          k,
-          p = 'The Google Maps JavaScript API',
-          c = 'google',
-          l = 'importLibrary',
-          q = '__ib__',
-          m = document,
-          b = window;
-        b = b[c] || (b[c] = {});
-        var d = b.maps || (b.maps = {}),
-          r = new Set(),
-          e = new URLSearchParams(),
-          u = () =>
-            h ||
-            (h = new Promise(async (f, n) => {
-              await (a = m.createElement('script'));
-              e.set('libraries', [...r] + '');
-              for (k in g)
-                e.set(
-                  k.replace(/[A-Z]/g, (t) => '_' + t[0].toLowerCase()),
-                  g[k]
-                );
-              e.set('callback', c + '.maps.' + q);
-              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
-              d[q] = f;
-              a.onerror = () => (h = n(Error(p + ' could not load.')));
-              a.nonce = m.querySelector('script[nonce]')?.nonce || '';
-              m.head.append(a);
-            }));
-        d[l]
-          ? console.warn(p + ' only loads once. Ignoring:', g)
-          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
-      })({ key: 'AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg', v: 'weekly' });
-    </script>
   </body>
 </html>
