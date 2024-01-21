@@ -113,6 +113,10 @@
 .p4 {
     font-size: 18px;
 
+    &--600 {
+        font-weight: 600;
+    }
+
     @include tablet {
         font-size: 24px;
     }
@@ -165,6 +169,10 @@
     @include tablet {
         font-size: 20px;
     }
+}
+
+.semi-bold {
+    font-weight: 600;
 }
 
 .text-uppercase {
