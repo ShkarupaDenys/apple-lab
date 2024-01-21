@@ -54,6 +54,10 @@
         &-title {
             margin-bottom: 5px;
         }
+
+        a {
+            @include hover("color", $primary);
+        }
     }
 
     &__bottom {

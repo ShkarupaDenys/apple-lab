@@ -43,9 +43,12 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item active">
-                  <button class="navigation__btn p4 font-grey selected">
+                  <a
+                    href="./category.html"
+                    class="navigation__btn p4 font-grey selected"
+                  >
                     iPhone
-                  </button>
+                  </a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -106,7 +109,7 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">iPad</button>
+                  <a href="/" class="navigation__btn p4 font-grey">iPad</a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -116,7 +119,7 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">MacBook</button>
+                  <a href="/" class="navigation__btn p4 font-grey">MacBook</a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -126,7 +129,7 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">Mac Mini</button>
+                  <a href="/" class="navigation__btn p4 font-grey">Mac Mini</a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -136,7 +139,7 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">iMac</button>
+                  <a href="/" class="navigation__btn p4 font-grey">iMac</a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -146,7 +149,7 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">Watch</button>
+                  <a href="/" class="navigation__btn p4 font-grey">Watch</a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -156,9 +159,9 @@
                   </div>
                 </li>
                 <li class="navigation__item">
-                  <button class="navigation__btn p4 font-grey">
+                  <a href="/" class="navigation__btn p4 font-grey">
                     Гаджеты apple
-                  </button>
+                  </a>
                   <div class="navigation__content">
                     <ul class="navigation__content-list">
                       <li class="navigation__content-item">
@@ -311,113 +314,126 @@
             <button class="button button--outline">Ремонт по почте</button>
           </div>
           <ul class="mobile-menu__categories">
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-iPhone"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">iPhone</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-iPhone"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-iPad"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">iPad</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-iPad"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-MacBook"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">MacBook</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-MacBook"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-MacMini"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">Mac Mini</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-MacMini"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-Watch"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
                 <span class="p3">Watch</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                class="mobile-menu__category-btn"
+                data-mobile-menu="mobile-menu-category-Watch"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
-            <li
-              class="mobile-menu__category"
-              data-mobile-menu="mobile-menu-category-all"
-            >
-              <div class="mobile-menu__category-title">
+            <li class="mobile-menu__category">
+              <a href="./category.html" class="mobile-menu__category-title">
                 <img
                   src="./img/mobile-menu/categories/iPhone.webp"
                   alt="iPhone"
                   class="mobile-menu__category-img"
                 />
+
                 <span class="p3">Гаджеты apple</span>
-              </div>
-              <img
-                class="mobile-menu__category-icon"
-                src="./img/icons/arrow-mob-menu.svg"
-                alt="iPhones"
-              />
+              </a>
+              <button
+                data-mobile-menu="mobile-menu-category-all"
+                class="mobile-menu__category-btn"
+              >
+                <img
+                  class="mobile-menu__category-icon"
+                  src="./img/icons/arrow-mob-menu.svg"
+                  alt="iPhones"
+                />
+              </button>
             </li>
           </ul>
           <p class="mobile-menu__contacts-title p2 p2--600">Контакты</p>
@@ -1344,7 +1360,7 @@
             class="malfunction__grid malfunction__content hidden"
             id="malfunction-content-common"
           >
-            <a href="/" class="malfunction__link">Не включается</a>
+            <a href="./fault.html" class="malfunction__link">Не включается</a>
             <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
             <a href="/" class="malfunction__link">Не включается</a>
             <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>

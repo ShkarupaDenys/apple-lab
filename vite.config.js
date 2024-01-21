@@ -9,6 +9,7 @@ module.exports = {
         main: resolve(__dirname, './src/index.html'),
         model: resolve(__dirname, './src/model.html'),
         model: resolve(__dirname, './src/category.html'),
+        model: resolve(__dirname, './src/fault.html'),
       },
     }
   },
