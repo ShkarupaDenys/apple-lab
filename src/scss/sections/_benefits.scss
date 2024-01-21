@@ -1,0 +1,74 @@
+.benefits {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    &__heading {
+        margin-bottom: 25px;
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include laptop {
+            gap: 40px;
+        }
+
+        @include desktop {
+            gap: 50px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &-title {
+            margin-bottom: 30px;
+        }
+
+        &-sub-title {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+
+        .reverse & {
+            @include laptop {
+                grid-column: 2 / 3;
+            }
+        }
+    }
+
+    &__picture {
+        .reverse & {
+            @include laptop {
+                grid-column: 1 / 2;
+                grid-row: 1;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
