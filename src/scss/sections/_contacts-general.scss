@@ -1,0 +1,32 @@
+.contacts-general {
+    padding-top: 50px;
+
+    @include desktop {
+        padding-top: 150px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__border {
+        width: 1px;
+        height: 20px;
+        background-color: $grey;
+        display: block;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: -5px;
+    }
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    }
+}

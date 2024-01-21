@@ -1,0 +1,51 @@
+.repair-by-mail {
+    padding-top: 50px;
+
+    @include tablet {
+        padding-top: 100px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__box-left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__box-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+        box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
+
+        @include tablet {
+            border-radius: 40px;
+            padding: 40px;
+        }
+    }
+
+    &__button {
+        @include laptop {
+            width: max-content;
+        }
+    }
+}

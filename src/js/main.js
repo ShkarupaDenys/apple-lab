@@ -6,5 +6,6 @@ import './slider';
 import './accordion';
 import './accordionFaq';
 import './accordionPrice';
+import './accordionContactsGeneral';
 import './map';
 import './mobile-menu';
