@@ -1,0 +1,88 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 0.2s;
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.39);
+        backdrop-filter: blur(16.45px);
+    }
+
+    &__content {
+        background-color: $dark-white;
+        padding: 20px;
+        border-radius: 20px;
+        position: absolute;
+        inset: 0;
+        width: calc(100% - 40px);
+        overflow-y: auto;
+        margin: 20px auto;
+
+        @include tablet {
+            padding: 40px;
+            border-radius: 40px;
+            width: max-content;
+        }
+
+        &--modal-ipad-model {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 530px;
+        }
+    }
+
+    &__close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        &--modal-ipad-model {
+            margin: 0;
+        }
+    }
+
+    &__form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__btn {
+        @include tablet {
+            width: max-content;
+        }
+    }
+
+    &__img {
+        max-width: 455px;
+        width: 100%;
+    }
+}

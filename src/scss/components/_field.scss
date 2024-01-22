@@ -1,7 +1,8 @@
 .field {
     border: none;
     padding: 15px 20px;
-    font-size: 22px;
+    font-size: 18px;
+
     line-height: 27px;
     width: 100%;
     border-radius: $field-border-radius;
@@ -10,5 +11,9 @@
 
     &::placeholder {
         color: $field-placeholder;
+    }
+
+    @include tablet {
+        font-size: 22px;
     }
 }
