@@ -9,3 +9,4 @@ import './accordionPrice';
 import './accordionContactsGeneral';
 import './map';
 import './mobile-menu';
+import './modal';

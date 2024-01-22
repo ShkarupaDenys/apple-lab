@@ -754,7 +754,7 @@
                 Скидка 5%.
               </p>
               <div class="hero-screen__actions">
-                <button class="button button--w-100">
+                <button class="button button--w-100" id="button-repair">
                   Записаться на ремонт
                 </button>
                 <button class="button button--w-100 button--outline">
@@ -886,7 +886,9 @@
       <div class="container">
         <div class="models__title">
           <h2 class="h3">Выберите модель</h2>
-          <a href="/" class="models__info">Как определить модель iPad</a>
+          <button id="button-ipad-model" class="models__info">
+            Как определить модель iPad
+          </button>
         </div>
         <ul class="models__list">
           <li class="models__item">
@@ -1853,5 +1855,82 @@
         </div>
       </div>
     </footer>
+
+    <!--    MODAL REPAIR    -->
+    <div class="modal modal-repair">
+      <div class="modal__bg"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="close-modal-repair">
+          <img src="./img/icons/close.svg" alt="Close" />
+        </button>
+        <h3 class="h3 modal__title">Запись на ремонт</h3>
+        <p class="p4">Оставьте ваши данные и мы свяжемся с вами</p>
+        <form action="" class="modal__form">
+          <select
+            class="field select"
+            name=""
+            id=""
+            value="Выберите сервисный центр"
+          >
+            <option value disabled selected>Cервисный центр</option>
+            <option value="Київ">Київ</option>
+            <option value="Дніпро">Дніпро</option>
+            <option value="Львів">Львів</option>
+          </select>
+          <input type="text" class="field" placeholder="Ваше имя" />
+          <p class="p4">Ваши данные</p>
+          <div class="modal__fields">
+            <input
+              type="text"
+              name="name"
+              class="field"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="field"
+              placeholder="Контактный телефон"
+            />
+          </div>
+          <p class="p4">Устройство и неисправность</p>
+          <div class="modal__fields">
+            <input type="text" class="field" placeholder="Модель устройства" />
+            <input
+              type="text"
+              class="field"
+              placeholder="Опишите неисправность"
+            />
+          </div>
+          <button class="button modal__btn" disabled>Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <!--    MODAL IPAD MODEL    -->
+    <div class="modal modal-ipad-model">
+      <div class="modal__bg"></div>
+      <div class="modal__content modal__content--modal-ipad-model">
+        <button class="modal__close" id="close-modal-ipad-model">
+          <img src="./img/icons/close.svg" alt="Close" />
+        </button>
+        <h3 class="h3 modal__title modal__title--modal-ipad-model">
+          Как определить <br />
+          модель iPad
+        </h3>
+        <p class="p4">Поверните iPad обратной стороной</p>
+        <img
+          src="./img/modal/modal-img-1.webp"
+          alt="Поверните iPad обратной стороной"
+          class="modal__img"
+        />
+        <p class="p4">Найдите заводскую маркировку модели. Например A1701.</p>
+        <img
+          src="./img/modal/modal-img-2.webp"
+          alt="Найдите заводскую маркировку модели."
+          class="modal__img"
+        />
+      </div>
+    </div>
   </body>
 </html>

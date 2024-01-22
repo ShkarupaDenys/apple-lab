@@ -1111,5 +1111,56 @@
         </div>
       </div>
     </footer>
+
+    <!--    MODAL REPAIR    -->
+    <div class="modal modal-repair">
+      <div class="modal__bg"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="close-modal-repair">
+          <img src="./img/icons/close.svg" alt="Close" />
+        </button>
+        <h3 class="h3 modal__title">Запись на ремонт</h3>
+        <p class="p4">Оставьте ваши данные и мы свяжемся с вами</p>
+        <form action="" class="modal__form">
+          <select
+            class="field select"
+            name=""
+            id=""
+            value="Выберите сервисный центр"
+          >
+            <option value disabled selected>Cервисный центр</option>
+            <option value="Київ">Київ</option>
+            <option value="Дніпро">Дніпро</option>
+            <option value="Львів">Львів</option>
+          </select>
+          <input type="text" class="field" placeholder="Ваше имя" />
+          <p class="p4">Ваши данные</p>
+          <div class="modal__fields">
+            <input
+              type="text"
+              name="name"
+              class="field"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="field"
+              placeholder="Контактный телефон"
+            />
+          </div>
+          <p class="p4">Устройство и неисправность</p>
+          <div class="modal__fields">
+            <input type="text" class="field" placeholder="Модель устройства" />
+            <input
+              type="text"
+              class="field"
+              placeholder="Опишите неисправность"
+            />
+          </div>
+          <button class="button modal__btn" disabled>Отправить заявку</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
