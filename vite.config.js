@@ -14,6 +14,7 @@ module.exports = {
         model: resolve(__dirname, './src/contacts.html'),
         model: resolve(__dirname, './src/about-us.html'),
         model: resolve(__dirname, './src/contacts-general.html'),
+        model: resolve(__dirname, './src/technical-page.html'),
       },
     }
   },
