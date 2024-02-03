@@ -24,13 +24,16 @@
 
     &__content {
         background-color: $dark-white;
-        padding: 20px;
+        //padding: 20px;
+        padding: 40px 20px;
         border-radius: 20px;
         position: absolute;
         inset: 0;
         width: calc(100% - 40px);
         overflow-y: auto;
-        margin: 20px auto;
+        //margin: 20px auto;
+        margin: auto;
+        height: max-content;
 
         @include tablet {
             padding: 40px;
