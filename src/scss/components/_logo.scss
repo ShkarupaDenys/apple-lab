@@ -4,8 +4,13 @@
     height: 40px;
 
     @include tablet {
-        width: 194px;
-        height: 47px;
+        width: 174px;
+        height: 42px;
+    }
+
+    @media (min-width: 1920px) {
+      width: 194px;
+      height: 47px;
     }
 
     &--large {

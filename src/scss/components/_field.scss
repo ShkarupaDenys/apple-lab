@@ -16,7 +16,11 @@
     }
 
     @include tablet {
-        font-size: 22px;
-        padding: 15px 20px;
+        // font-size: 22px;
+    }
+
+    @media (min-width: 1920px) {
+      font-size: 22px;
+      padding: 15px 20px;
     }
 }

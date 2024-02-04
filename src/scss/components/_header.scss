@@ -27,13 +27,19 @@
         box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.75);
 
         @include laptop {
-            padding: 25px 0;
+            padding: 15px 0;
+        }
+
+        @media (min-width: 1920px) {
+          padding: 25px 0;
         }
     }
 
     &__wrap {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         position: relative;
 
@@ -43,12 +49,22 @@
         }
     }
 
+    &__actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @include desktop {
+        gap: 32px;
+      }
+    }
+
     &__burger-menu {
-        margin-left: auto;
-        grid-column: 6 / 7;
+        // margin-left: auto;
+        // grid-column: 6 / 7;
 
         @include laptop {
-            grid-column: 4 / 5;
+            // grid-column: 4 / 5;
         }
 
         @include desktop {
@@ -228,8 +244,8 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            margin-left: auto;
-            grid-column: 4 / 6;
+            // margin-left: auto;
+            // grid-column: 4 / 6;
         }
 
         //@include laptop {

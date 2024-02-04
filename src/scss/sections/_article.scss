@@ -140,6 +140,9 @@
         list-style: inside;
         list-style-position: outside;
         padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
 
         @include tablet {
             padding-left: 40px;

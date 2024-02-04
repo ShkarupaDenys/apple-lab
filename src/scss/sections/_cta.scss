@@ -103,10 +103,16 @@
         //line-height: 22px;
         line-height: 20px;
 
-        @include largeMob {
-            font-size: 20px;
-            line-height: 24px;
+        @include tablet {
+          font-size: 18px;
+          line-height: 22px; 
         }
+
+        @media (min-width: 1920px) {
+          font-size: 20px;
+          line-height: 24px; 
+        }
+        
 
         &::placeholder {
             color: $light-grey;
