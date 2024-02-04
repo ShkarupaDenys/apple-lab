@@ -5,6 +5,7 @@
     background-image: url("./../img/icons/arrow.svg");
     background-repeat: no-repeat;
     background-position: calc(100% - 20px) 50%;
+    color: $font-color;
 
     &:after {
         content: "";
