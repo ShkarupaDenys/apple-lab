@@ -75,7 +75,7 @@
     &__title-box {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
 
         @include laptop {
             grid-column: 3 / 5;
@@ -83,7 +83,12 @@
             align-self: end;
 
             @include desktop {
-                max-width: 565px;
+                max-width: 435px;
+            }
+
+            @media (min-width: 1920px) {
+              max-width: 565px;
+              gap: 30px;
             }
         }
     }
@@ -104,8 +109,8 @@
         line-height: 20px;
 
         @include tablet {
-          font-size: 18px;
-          line-height: 22px; 
+          // font-size: 18px;
+          // line-height: 22px; 
         }
 
         @media (min-width: 1920px) {

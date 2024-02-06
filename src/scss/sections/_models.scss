@@ -73,7 +73,13 @@
         }
 
         @include desktop {
-            row-gap: 30px;
+            // row-gap: 30px;
+            // column-gap: 30px
+            gap: 50px;
+        }
+
+        @media (min-width: 1920px) {
+          // column-gap: 30px
         }
     }
 

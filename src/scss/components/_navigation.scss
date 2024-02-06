@@ -3,38 +3,56 @@
     background-color: $white;
     padding: 40px;
     width: max-content;
-    height: 650px;
-    border-radius: 35px;
+    height: 490px;
+    border-radius: 25px;
     top: calc(100% + 10px);
     background-color: $white;
     opacity: 0;
     visibility: hidden;
     transition: all ease-in-out 0.2s;
     filter: blur(8px);
-    left: -200px;
+    left: -100px;
+
+    @media (min-width: 1920px) {
+      border-radius: 35px;
+      height: 650px;
+      left: -200px;
+    }
 
     &__list {
         display: flex;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         position: relative;
+
+        @media (min-width: 1920px) {
+          padding-bottom: 30px;
+        }
 
         &::after {
             content: "";
             width: 100%;
-            height: 3px;
+            height: 2px;
             border-radius: 40px;
             position: absolute;
             left: 0;
             bottom: 0;
             background-color: $primary;
+
+            @media (min-width: 1920px) {
+              height: 3px;
+            }
         }
     }
 
     &__btn {
-        padding: 10px 30px;
+        padding: 8px 22px;
         position: relative;
         transition: all linear 0.3s;
         border-radius: 40px;
+
+        @media (min-width: 1920px) {
+          padding: 10px 30px;
+        }
 
         .active & {
             color: $font-color;
@@ -44,16 +62,20 @@
     }
 
     &__content {
-        padding-top: 30px;
+        // padding-top: 30px;
         display: none;
 
         .active & {
             display: flex;
             position: absolute;
             left: 0;
-            top: 100px;
+            top: 65px;
             height: 100%;
             width: max-content;
+
+            @media (min-width: 1920px) {
+              top: 100px;
+            }
         }
 
         &-list {
@@ -62,7 +84,11 @@
             grid-auto-flow: column;
             grid-template-rows: repeat(10, auto);
             column-gap: 35px;
-            row-gap: 15px;
+            row-gap: 10px;
+
+            @media (min-width: 1920px) {
+              row-gap: 15px;
+            }
         }
 
         &-item {
