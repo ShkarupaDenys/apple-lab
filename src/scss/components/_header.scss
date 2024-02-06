@@ -12,12 +12,16 @@
     //}
 
     @include tablet {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 
     @include desktop {
         position: fixed;
         top: 0;
+    }
+
+    @media (min-width: 1920px) {
+      padding-top: 50px;
     }
 
     &--fixed {
@@ -124,13 +128,16 @@
 
     &__contacts {
         display: flex;
-        gap: 12px;
+        gap: 15px;
         grid-column: 3 / 6;
 
         &-dropdown {
             opacity: 0;
             filter: blur(8px);
             visibility: hidden;
+            // opacity: 1;
+            // filter: blur(0);
+            // visibility: visible;
             transition: all ease-in-out 0.2s;
             position: absolute;
             top: 20px;
@@ -146,6 +153,14 @@
             z-index: 10;
 
             @include desktop {
+                left: -40px;
+                right: auto;
+                // border-radius: 40px;
+                padding: 20px;
+                gap: 12px;
+            }
+
+            @media (min-width: 1920px) {
                 left: -40px;
                 right: auto;
                 border-radius: 40px;
@@ -176,7 +191,11 @@
             @include hover("color", $primary);
 
             @include desktop {
-                gap: 15px;
+                gap: 5px;
+            }
+
+            @media (min-width: 1920px) {
+              gap: 15px;
             }
         }
 
@@ -198,15 +217,25 @@
             //height: 40px;
             //min-width: 40px;
 
-            width: 30px;
-            height: 30px;
-            min-width: 30px;
+            // width: 30px;
+            // height: 30px;
+            // min-width: 30px;
 
-            //@include tablet {
-            //    width: 30px;
-            //    height: 30px;
-            //    min-width: 30px;
-            //}
+              width: 25px;
+              height: 25px;
+              min-width: 25px;
+
+            @include desktop {
+               width: 25px;
+               height: 25px;
+               min-width: 25px;
+            }
+            
+            @media (min-width: 1920px) {
+              width: 30px;
+              height: 30px;
+              min-width: 30px;
+            }
         }
 
         &-geo {
@@ -252,9 +281,17 @@
         //    display: none;
         //}
 
+        // @include desktop {
+        //     display: flex;
+        //     grid-column: none;
+        // }
+
         @include desktop {
-            display: flex;
-            grid-column: none;
+          gap: 15px;
+        }
+
+        @media (min-width: 1920px) {
+          gap: 30px;
         }
     }
 }

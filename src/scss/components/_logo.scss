@@ -1,11 +1,14 @@
 .logo {
     display: inline-flex;
-    width: 165px;
-    height: 40px;
+    // width: 165px;
+    // height: 40px;
+
+    width: 145px;
+    height: 34px;
 
     @include tablet {
-        width: 174px;
-        height: 42px;
+        width: 154px;
+        height: 36px;
     }
 
     @media (min-width: 1920px) {
