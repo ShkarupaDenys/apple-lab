@@ -7,8 +7,11 @@
         border-radius: 20px;
         background-color: $white;
         box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
-        padding: 15px 30px;
+        padding: 15px 20px;
 
+        @include tablet {
+          padding: 15px 30px;
+        }
         // &.active {
         //     border-radius: 20px;
         // }
@@ -28,7 +31,7 @@
 
     &__head {
         position: relative;
-        gap: 4px;
+        gap: 12px;
         z-index: 100;
         width: 100%;
         display: flex;
@@ -50,7 +53,7 @@
     &__title {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
         text-align: left;
         font-size: 16px;
         font-weight: 600;
@@ -72,11 +75,12 @@
             }
         }
 
-        @include largeMob {
-            font-size: 20px;
+        @include desktop {
+            font-size: 18px;
+            gap: 20px;
         }
 
-        @include tablet {
+        @media (min-width: 1920px) {
             font-size: 24px;
         }
 
@@ -85,9 +89,14 @@
             height: 20px;
 
             @include tablet {
-                width: 30px;
-                height: 30px;
-            }
+              width: 30px;
+              height: 30px;
+          }
+
+            @include desktop {
+              width: 25px;
+              height: 25px;
+          }
         }
 
         &-icon {
@@ -96,7 +105,13 @@
             min-width: 20px;
             display: flex;
 
-            @include tablet {
+            @include desktop {
+                width: 25px;
+                height: 25px;
+                min-width: 25px;
+            }
+
+            @media (min-width: 1920px) {
                 width: 30px;
                 height: 30px;
                 min-width: 30px;
@@ -115,13 +130,21 @@
             gap: 15px;
             padding-top: 20px;
             max-width: 95%;
-            font-size: 16px;
+            font-size: 14px;
 
-            @include largeMob {
-                font-size: 20px;
+            @include desktop {
+              font-size: 16px;
             }
 
-            @include tablet {
+            @media (min-width: 1920px) {
+              font-size: 16px;
+            }
+
+            // @include largeMob {
+            //     font-size: 20px;
+            // }
+
+            @media (min-width: 1920px) {
                 font-size: 24px;
             }
 
@@ -131,11 +154,11 @@
                 font-weight: 600;
                 font-size: 13px;
 
-                @include largeMob {
-                    font-size: 20px;
+                @include tablet {
+                    font-size: 16px;
                 }
 
-                @include tablet {
+                @media (min-width: 1920px) {
                     font-size: 24px;
                 }
             }
@@ -169,10 +192,18 @@
                 gap: 12px;
                 align-items: center;
                 padding: 17px 0;
-                border-bottom: 3px solid $light-grey;
+                border-bottom: 2px solid $light-grey;
+
+                @media (min-width: 1920px) {
+                  border-width: 3px;
+                }
 
                 &:first-child {
-                    border-top: 3px solid $light-grey;
+                    border-top: 2px solid $light-grey;
+
+                    @media (min-width: 1920px) {
+                      border-width: 3px;
+                    }
                 }
             }
 
@@ -268,9 +299,14 @@
     }
 
     &__icon-info {
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
         display: inline-flex;
         cursor: pointer;
+
+        @media (min-width: 1920px) {
+          width: 24px;
+          height: 24px;
+        }
     }
 }
