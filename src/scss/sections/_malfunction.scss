@@ -31,12 +31,16 @@
     }
 
     &__list {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         display: flex;
         align-items: center;
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+
+        @include desktop {
+          margin-bottom: 30px;
+        }
 
         &::-webkit-scrollbar {
             display: none;
@@ -44,10 +48,18 @@
     }
 
     &__btn {
-        padding: 10px 30px;
+        padding: 6px 16px;
         position: relative;
         transition: all linear 0.3s;
         border-radius: 40px;
+
+        @include desktop {
+          padding: 10px 30px;
+        }
+
+        @media (min-width: 1920px) {
+          padding: 10px 30px;
+        }
 
         &.selected {
             color: #242424;
@@ -58,17 +70,21 @@
     &__grid {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
 
-        @include largeMob {
-            gap: 30px;
+        @include desktop {
+            gap: 20px;
+        }
+
+        @media (min-width: 1920px) {
+          gap: 30px;
         }
     }
 
     &__link {
-        font-size: 16px;
-        padding: 10px;
-        border: 2px solid $light-grey;
+        font-size: 14px;
+        padding: 6px 10px;
+        border: 1px solid $light-grey;
         border-radius: 40px;
         display: flex;
         align-items: center;
@@ -76,13 +92,19 @@
         @include hover("color", $primary);
 
         @include largeMob {
-            border-width: 3px;
-            font-size: 20px;
+            // border-width: 3px;
+            // font-size: 20px;
         }
 
         @include tablet {
-            font-size: 24px;
-            padding: 10px 20px;
+            font-size: 16px;
+            padding: 8px 18px;
+        }
+
+        @media (min-width: 1920px) {
+          padding: 10px 20px;
+          border-width: 2px;
+          font-size: 24px;
         }
     }
 }
