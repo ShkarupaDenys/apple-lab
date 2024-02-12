@@ -1,6 +1,10 @@
 .link {
-    font-size: 24px;
+    font-size: 16px;
     color: $link-color;
+
+    @media (min-width: 1920px) {
+      font-size: 24px;
+    }
 
     @include hover(color, $link-color-hover);
     @include active(color, $link-color-active);

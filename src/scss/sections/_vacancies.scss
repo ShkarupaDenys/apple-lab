@@ -5,11 +5,28 @@
         padding-top: 150px;
     }
 
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+
+      @include tablet {
+        font-size: 24px;
+      }
+
+      @media (min-width: 1920px) {
+        font-size: 32px;
+      }
+    }
+
     &__headings,
     &__wrap {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
+
+        @include desktop {
+          gap: 30px;
+        }
     }
 
     &__list {
@@ -36,7 +53,11 @@
         }
 
         &:not(:last-child) {
-            border-bottom: 3px solid $light-grey;
+            border-bottom: 2px solid $light-grey;
+
+            @media (min-width: 1920px) {
+              border-width: 3px;
+            }
         }
     }
 
