@@ -22,9 +22,9 @@
             @include tablet {
                 padding: 15px 30px;
 
-                &.active {
-                    padding: 30px;
-                }
+                // &.active {
+                //     padding: 30px;
+                // }
             }
         }
     }
@@ -153,6 +153,8 @@
                 gap: 0;
                 font-weight: 600;
                 font-size: 13px;
+                // padding: 25px 0 30px;
+                padding-bottom: 15px;
 
                 @include tablet {
                     font-size: 16px;
@@ -210,12 +212,12 @@
             &--contacts-general {
                 flex-direction: column;
 
-                .link {
-                    font-size: 16px;
-                    @include tablet {
-                        font-size: 24px;
-                    }
-                }
+                // .link {
+                //     font-size: 16px;
+                //     @include tablet {
+                //         font-size: 24px;
+                //     }
+                // }
 
                 @include tablet {
                     display: grid;
@@ -230,7 +232,11 @@
 
             &-contacts-general {
                 display: flex;
-                gap: 15px;
+                gap: 5px;
+
+                @media (min-width: 1920px) {
+                  gap: 15px; 
+                }
             }
         }
 
@@ -248,8 +254,13 @@
                 height: 20px;
 
                 @include tablet {
-                    width: 30px;
-                    height: 30px;
+                    width: 25px;
+                    height: 25px;
+
+                    @media (min-width: 1920px) {
+                      width: 30px;
+                      height: 30px;
+                    }
                 }
             }
         }

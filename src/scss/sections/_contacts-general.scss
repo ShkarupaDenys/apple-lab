@@ -8,7 +8,11 @@
     &__wrap {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 15px;
+
+        @media (min-width: 1920px) {
+          gap: 30px;
+        }
     }
 
     &__border {
