@@ -1,26 +1,26 @@
 .header-nav-button {
-    display: inline-flex;
-    gap: 20px;
-    align-items: center;
-    padding: 8px 18px;
-    background-color: $white;
-    box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
-    border-radius: $btn-border-radius;
-    line-height: 27px;
-    margin-left: auto;
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+  padding: 8px 18px;
+  background-color: $white;
+  box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
+  border-radius: $btn-border-radius;
+  line-height: 27px;
+  margin-left: auto;
 
-    @media (min-width: 1920px) {
-      padding: 15px 30px;
-      gap: 50px;
+  @include desktop {
+    padding: 15px 30px;
+    gap: 50px;
+  }
+
+  &__icon {
+    width: 15px;
+    transform-origin: center;
+    transition: all ease-in-out 0.2s;
+
+    @include desktop {
+      width: 19px;
     }
-
-    &__icon {
-        width: 15px;
-        transform-origin: center;
-        transition: all ease-in-out 0.2s;
-
-      @media (min-width: 1920px) {
-        width: 19px;
-      }
-    }
+  }
 }

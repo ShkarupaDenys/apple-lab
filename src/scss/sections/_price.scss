@@ -1,7 +1,7 @@
 .price {
     padding-top: 50px;
 
-    @include desktop {
+    @include laptop {
         padding-top: 100px;
     }
 

@@ -1,7 +1,7 @@
 .history {
     padding-top: 50px;
 
-    @include desktop {
+    @include laptop {
         padding-top: 100px;
     }
 
@@ -14,7 +14,7 @@
         flex-direction: column;
         gap: 20px;
 
-        @include desktop {
+        @include laptop {
             display: grid;
         }
     }

@@ -1,7 +1,7 @@
 .models {
     padding-top: 50px;
 
-    @include desktop {
+    @include laptop {
         padding-top: 100px;
     }
 
@@ -24,13 +24,13 @@
         border-radius: 40px;
         width: max-content;
 
-        @include desktop {
-          font-size: 16px;
-          padding: 10px 30px;
+        @include laptop {
+            font-size: 16px;
+            padding: 10px 30px;
         }
 
-        @media (min-width: 1920px) {
-          font-size: 24px;
+        @include desktop {
+            font-size: 24px;
         }
     }
 
@@ -58,9 +58,9 @@
         border-radius: 40px;
         font-size: 14px;
 
-        @include desktop {
-          padding: 10px 30px;
-          font-size: 16px;
+        @include laptop {
+            padding: 10px 30px;
+            font-size: 16px;
         }
 
         &.selected {
@@ -83,14 +83,14 @@
             grid-template-columns: repeat(4, 1fr);
         }
 
-        @include desktop {
+        @include laptop {
             // row-gap: 30px;
             // column-gap: 30px
             gap: 50px;
         }
 
-        @media (min-width: 1920px) {
-          // column-gap: 30px
+        @include desktop {
+            // column-gap: 30px
         }
     }
 
@@ -106,8 +106,8 @@
         align-items: center;
         gap: 10px;
 
-        @include desktop {
-          gap: 20px;
+        @include laptop {
+            gap: 20px;
         }
 
         &-title {

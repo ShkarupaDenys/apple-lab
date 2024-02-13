@@ -5,15 +5,15 @@
         padding-top: 50px;
     }
 
-    @include desktop {
+    @include laptop {
         padding: 160px 0 80px;
         border-radius: 0px 0px 40px 40px;
         background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
         box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
     }
 
-    @media (min-width: 1920px) {
-      padding: 208px 0 100px;
+    @include desktop {
+        padding: 208px 0 100px;
     }
 
     &__wrap {
@@ -31,7 +31,7 @@
             border-radius: 40px;
         }
 
-        @include desktop {
+        @include laptop {
             padding: 0;
             background: none;
             box-shadow: none;
@@ -47,7 +47,7 @@
                 flex-direction: column;
             }
 
-            @include desktop {
+            @include laptop {
                 display: grid;
                 gap: 20px;
             }
@@ -60,7 +60,7 @@
         gap: 15px;
 
         @include tablet {
-          gap: 25px;
+            gap: 25px;
         }
     }
 
@@ -81,7 +81,9 @@
     }
 
     &__sub-title {
-        max-width: 535px;
+        @include laptop {
+            max-width: 535px;
+        }
 
         &--tablet {
             display: none;
@@ -102,7 +104,7 @@
             display: none;
         }
 
-        @include desktop {
+        @include laptop {
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -134,7 +136,7 @@
                 grid-template-columns: 1fr 3fr;
             }
 
-            @include desktop {
+            @include laptop {
                 grid-template-columns: 1fr 2.4fr;
             }
         }
@@ -155,13 +157,13 @@
         height: 20px;
 
         @include largeMob {
-          width: 25px;
-          height: 25px;
+            width: 25px;
+            height: 25px;
         }
 
-        @media (min-width: 1920px) {
-          width: 30px;
-          height: 30px;
+        @include desktop {
+            width: 30px;
+            height: 30px;
         }
     }
 
@@ -192,19 +194,25 @@
     &__picture {
         padding-top: 30px;
 
-        @include desktop {
+        @include tablet {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        @include laptop {
             padding: 0;
             display: flex;
             align-items: center;
             height: 340px;
+            max-width: 100%;
         }
 
-        @media (min-width: 1920px) {
-          height: 400px;
+        @include desktop {
+            height: 400px;
         }
 
         &--vertical {
-            @include desktop {
+            @include laptop {
                 height: 600px;
             }
         }
@@ -234,9 +242,9 @@
     }
 
     &__link {
-        font-size: 18px;
+        font-size: 16px;
 
-        @include tablet {
+        @include desktop {
             font-size: 24px;
         }
     }

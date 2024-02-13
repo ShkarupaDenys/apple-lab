@@ -10,7 +10,7 @@
         padding: 15px 20px;
 
         @include tablet {
-          padding: 15px 30px;
+            padding: 15px 30px;
         }
         // &.active {
         //     border-radius: 20px;
@@ -75,12 +75,12 @@
             }
         }
 
-        @include desktop {
+        @include laptop {
             font-size: 18px;
             gap: 20px;
         }
 
-        @media (min-width: 1920px) {
+        @include desktop {
             font-size: 24px;
         }
 
@@ -89,14 +89,14 @@
             height: 20px;
 
             @include tablet {
-              width: 30px;
-              height: 30px;
-          }
+                width: 30px;
+                height: 30px;
+            }
 
-            @include desktop {
-              width: 25px;
-              height: 25px;
-          }
+            @include laptop {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         &-icon {
@@ -105,13 +105,13 @@
             min-width: 20px;
             display: flex;
 
-            @include desktop {
+            @include laptop {
                 width: 25px;
                 height: 25px;
                 min-width: 25px;
             }
 
-            @media (min-width: 1920px) {
+            @include desktop {
                 width: 30px;
                 height: 30px;
                 min-width: 30px;
@@ -132,19 +132,19 @@
             max-width: 95%;
             font-size: 14px;
 
-            @include desktop {
-              font-size: 16px;
+            @include laptop {
+                font-size: 16px;
             }
 
-            @media (min-width: 1920px) {
-              font-size: 16px;
+            @include desktop {
+                font-size: 16px;
             }
 
             // @include largeMob {
             //     font-size: 20px;
             // }
 
-            @media (min-width: 1920px) {
+            @include desktop {
                 font-size: 24px;
             }
 
@@ -160,7 +160,7 @@
                     font-size: 16px;
                 }
 
-                @media (min-width: 1920px) {
+                @include desktop {
                     font-size: 24px;
                 }
             }
@@ -178,8 +178,8 @@
             display: flex;
             gap: 10px;
 
-            @media (min-width: 1920px) {
-              gap: 15px;
+            @include desktop {
+                gap: 15px;
             }
 
             &-title {
@@ -196,15 +196,15 @@
                 padding: 17px 0;
                 border-bottom: 2px solid $light-grey;
 
-                @media (min-width: 1920px) {
-                  border-width: 3px;
+                @include desktop {
+                    border-width: 3px;
                 }
 
                 &:first-child {
                     border-top: 2px solid $light-grey;
 
-                    @media (min-width: 1920px) {
-                      border-width: 3px;
+                    @include desktop {
+                        border-width: 3px;
                     }
                 }
             }
@@ -224,7 +224,7 @@
                     grid-template-columns: 1fr 2.2fr;
                 }
 
-                @include desktop {
+                @include laptop {
                     display: grid;
                     grid-template-columns: 1.5fr 4fr;
                 }
@@ -234,8 +234,8 @@
                 display: flex;
                 gap: 5px;
 
-                @media (min-width: 1920px) {
-                  gap: 15px; 
+                @include desktop {
+                    gap: 15px;
                 }
             }
         }
@@ -244,9 +244,9 @@
             width: 20px;
             height: 20px;
 
-            @media (min-width: 1920px) {
-              width: 30px;
-              height: 30px;
+            @include desktop {
+                width: 30px;
+                height: 30px;
             }
 
             &--contacts-general {
@@ -257,9 +257,9 @@
                     width: 25px;
                     height: 25px;
 
-                    @media (min-width: 1920px) {
-                      width: 30px;
-                      height: 30px;
+                    @include desktop {
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
@@ -270,7 +270,7 @@
             flex-direction: column;
             gap: 30px;
 
-            @include desktop {
+            @include laptop {
                 display: grid;
                 grid-template-columns: 1fr 400px;
                 align-items: center;
@@ -286,10 +286,10 @@
         background-color: $primary;
         position: relative;
 
-        @media (min-width: 1920px) {
-          width: 15px;
-          min-width: 15px;
-          height: 3px;
+        @include desktop {
+            width: 15px;
+            min-width: 15px;
+            height: 3px;
         }
 
         &::before {
@@ -315,9 +315,9 @@
         display: inline-flex;
         cursor: pointer;
 
-        @media (min-width: 1920px) {
-          width: 24px;
-          height: 24px;
+        @include desktop {
+            width: 24px;
+            height: 24px;
         }
     }
 }

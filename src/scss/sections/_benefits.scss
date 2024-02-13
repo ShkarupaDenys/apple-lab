@@ -1,7 +1,7 @@
 .benefits {
     padding-top: 50px;
 
-    @include desktop {
+    @include laptop {
         padding-top: 100px;
     }
 
@@ -22,7 +22,7 @@
             gap: 40px;
         }
 
-        @include desktop {
+        @include laptop {
             gap: 50px;
         }
     }
@@ -42,8 +42,8 @@
         &-title {
             margin-bottom: 15px;
 
-            @media (min-width: 1920px) {
-              margin-bottom: 30px;
+            @include desktop {
+                margin-bottom: 30px;
             }
         }
 
