@@ -11,8 +11,8 @@
         font-size: 48px;
     }
 
-    @media (min-width: 1920px) {
-      font-size: 64px;
+    @include desktop {
+        font-size: 64px;
     }
 }
 
@@ -44,7 +44,7 @@
         font-size: 32px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 36px;
     }
 }
@@ -70,7 +70,7 @@
         // font-size: 20px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 24px;
     }
 }
@@ -93,7 +93,7 @@
         font-size: 18px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 24px;
     }
 }
@@ -102,12 +102,12 @@
     font-size: 14px;
     font-weight: 500;
 
-    @include desktop {
-      font-size: 18px;
-  }
+    @include laptop {
+        font-size: 18px;
+    }
 
-    @media (min-width: 1920px) {
-      font-size: 24px;
+    @include desktop {
+        font-size: 24px;
     }
 }
 
@@ -120,7 +120,7 @@
         // font-size: 20px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 24px;
     }
 }
@@ -133,12 +133,12 @@
         font-weight: 600;
     }
 
-    @include desktop {
+    @include laptop {
         //font-size: 24px;
         // font-size: 18px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 24px;
     }
 }
@@ -165,7 +165,7 @@
         font-size: 16px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 24px;
     }
 }
@@ -181,8 +181,8 @@
     //     font-size: 24px;
     // }
 
-    @media (min-width: 1920px) {
-      font-size: 24px;
+    @include desktop {
+        font-size: 24px;
     }
 }
 
@@ -206,7 +206,7 @@
         // font-size: 18px;
     }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 22px;
     }
 }
@@ -228,19 +228,19 @@
         font-size: 18px;
     }
 
-    @media (min-width: 1920px) {
-      font-size: 22px;
+    @include desktop {
+        font-size: 22px;
     }
 }
 
 .p10 {
     font-size: 14px;
 
-    // @include desktop {
+    // @include laptop {
     //     font-size: 18px;
     // }
 
-    @media (min-width: 1920px) {
+    @include desktop {
         font-size: 20px;
     }
 }

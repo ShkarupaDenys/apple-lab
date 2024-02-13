@@ -2,7 +2,7 @@
     padding-top: 50px;
     overflow: hidden;
 
-    @include desktop {
+    @include laptop {
         padding-top: 100px;
     }
 
@@ -32,11 +32,11 @@
         }
 
         @include laptop {
-          padding: 30px;
+            padding: 30px;
         }
 
-        @media (min-width: 1920px) {
-          border-radius: 40px;
+        @include desktop {
+            border-radius: 40px;
         }
     }
 }

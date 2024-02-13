@@ -1,73 +1,73 @@
 .repair-by-mail {
-    padding-top: 50px;
+  padding-top: 50px;
 
-    @include tablet {
-        padding-top: 100px;
+  @include tablet {
+    padding-top: 100px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    @include laptop {
+      gap: 12px;
     }
 
-    &__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
+    @include desktop {
+      gap: 16px;
+    }
+  }
 
-        @include desktop {
-          gap: 12px;
-        }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-        @media (min-width: 1920px) {
-          gap: 16px;
-        }
+    @include laptop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include laptop {
+      gap: 20px;
     }
 
-    &__wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        @include laptop {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+    @include desktop {
+      gap: 30px;
     }
+  }
 
-    &__box-left {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+  &__box-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+    box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
 
-        @include desktop {
-          gap: 20px;
-        }
+    // @include tablet {
+    //     border-radius: 40px;
+    //     padding: 40px;
+    // }
 
-        @media (min-width: 1920px) {
-          gap: 30px;
-        }
+    @include desktop {
+      border-radius: 40px;
+      gap: 20px;
+      padding: 40px;
     }
+  }
 
-    &__box-right {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-        border-radius: 20px;
-        background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
-        box-shadow: 9px 10px 30px 0px rgba(204, 204, 204, 0.21);
-
-        // @include tablet {
-        //     border-radius: 40px;
-        //     padding: 40px;
-        // }
-
-        @media (min-width: 1920px) {
-          border-radius: 40px;
-          gap: 20px;
-          padding: 40px;
-        }
+  &__button {
+    @include laptop {
+      width: max-content;
     }
-
-    &__button {
-        @include laptop {
-            width: max-content;
-        }
-    }
+  }
 }

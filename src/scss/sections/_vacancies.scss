@@ -6,16 +6,16 @@
     }
 
     &__title {
-      font-weight: 600;
-      font-size: 18px;
+        font-weight: 600;
+        font-size: 18px;
 
-      @include tablet {
-        font-size: 24px;
-      }
+        @include tablet {
+            font-size: 24px;
+        }
 
-      @media (min-width: 1920px) {
-        font-size: 32px;
-      }
+        @include desktop {
+            font-size: 32px;
+        }
     }
 
     &__headings,
@@ -24,8 +24,8 @@
         flex-direction: column;
         gap: 15px;
 
-        @include desktop {
-          gap: 30px;
+        @include laptop {
+            gap: 30px;
         }
     }
 
@@ -55,8 +55,8 @@
         &:not(:last-child) {
             border-bottom: 2px solid $light-grey;
 
-            @media (min-width: 1920px) {
-              border-width: 3px;
+            @include desktop {
+                border-width: 3px;
             }
         }
     }
