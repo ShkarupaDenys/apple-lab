@@ -21,8 +21,8 @@
     
     <title>Model page</title>
     <script type="module" crossorigin src="/apple-lab/assets/vendor.4fe26b01.js"></script>
-    <script type="module" crossorigin src="/apple-lab/assets/modal.820be2c6.js"></script>
-    <link rel="stylesheet" href="/apple-lab/assets/modal.00802651.css">
+    <script type="module" crossorigin src="/apple-lab/assets/modal.05bb5ced.js"></script>
+    <link rel="stylesheet" href="/apple-lab/assets/modal.7fbaa8db.css">
   </head>
   <body>
     <!--    HEADER    -->
@@ -1312,47 +1312,51 @@
           <h2 class="malfunction__heading h3">Выберите неисправность</h2>
           <ul class="malfunction__list">
             <li class="malfunction__item">
-              <button
+              <a
+                href="./fault.html"
                 class="malfunction__btn p4 font-grey"
                 data-tab-content-id="malfunction-content-common"
                 id="malfunction-btn-common"
               >
                 Общие поломки
-              </button>
+              </a>
             </li>
             <li class="malfunction__item">
-              <button
+              <a
+                href="./fault.html"
                 class="malfunction__btn p4 font-grey"
                 data-tab-content-id="malfunction-content-sound"
                 id="malfunction-btn-sound"
               >
                 Звук
-              </button>
+              </a>
             </li>
             <li class="malfunction__item">
-              <button
+              <a
+                href="./fault.html"
                 class="malfunction__btn p4 font-grey"
                 data-tab-content-id="malfunction-content-screen-and-body"
                 id="malfunction-btn-screen-and-body"
               >
                 Экран и корпус
-              </button>
+              </a>
             </li>
             <li class="malfunction__item">
-              <button
+              <a
+                href="./fault.html"
                 class="malfunction__btn p4 font-grey"
                 data-tab-content-id="malfunction-content-camera"
                 id="malfunction-btn-camera"
               >
                 Камера
-              </button>
+              </a>
             </li>
           </ul>
           <div
             class="malfunction__grid malfunction__content hidden"
             id="malfunction-content-common"
           >
-            <a href="./fault.html" class="malfunction__link">Не включается</a>
+            <a href="/" class="malfunction__link">Не включается</a>
             <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
             <a href="/" class="malfunction__link">Не включается</a>
             <a href="/" class="malfunction__link">Ремонт и замена кнопок</a>
@@ -1782,14 +1786,104 @@
                 <span class="accordion__icon"></span>
               </button>
               <div class="accordion__content active">
-                <ul class="accordion__content-list">
+                <ul class="accordion__tabs-list">
+                  <li class="accordion__tabs-item">
+                    <button
+                      class="accordion__tabs-btn font-grey selected"
+                      data-tab-content-id="location-kyiv-olimpiyska"
+                      id="location-kyiv-olimpiyska-btn"
+                    >
+                      м. Олимпийская
+                    </button>
+                  </li>
+                  <li class="accordion__tabs-item">
+                    <button
+                      class="accordion__tabs-btn"
+                      data-tab-content-id="location-kyiv-poznyaky"
+                      id="location-kyiv-poznyaky-btn"
+                    >
+                      м. Позняки
+                    </button>
+                  </li>
+                  <li class="accordion__tabs-item">
+                    <button
+                      class="accordion__tabs-btn"
+                      data-tab-content-id="location-kyiv-minska"
+                      id="location-kyiv-minska-btn"
+                    >
+                      м. Минская
+                    </button>
+                  </li>
+                </ul>
+                <ul
+                  class="accordion__content-list accordion__tabs-content hidden"
+                  id="location-kyiv-olimpiyska"
+                >
                   <li class="accordion__content-item">
                     <img
                       class="accordion__content-icon"
                       src="/apple-lab/assets/geo.1c3ccd5f.svg"
                       alt="Adress"
                     />
-                    <a href="#" class="p2">м. Университет, ул. Сумская 48</a>
+                    <a href="#" class="p2">м. Олимпийская, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.661a3882.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.aef54c6f.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+                <ul
+                  class="accordion__content-list accordion__tabs-content hidden"
+                  id="location-kyiv-poznyaky"
+                >
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Позняки, ул. Сумская 48</a>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/clock.661a3882.svg"
+                      alt="Adress"
+                    />
+                    <p class="p2">Пн-Сб с 10:00 до 19:00</p>
+                  </li>
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/phone.aef54c6f.svg"
+                      alt="Adress"
+                    />
+                    <a href="tel:+380732828787" class="p2">073 282 87 87</a>
+                  </li>
+                </ul>
+                <ul
+                  class="accordion__content-list accordion__tabs-content hidden"
+                  id="location-kyiv-minska"
+                >
+                  <li class="accordion__content-item">
+                    <img
+                      class="accordion__content-icon"
+                      src="/apple-lab/assets/geo.1c3ccd5f.svg"
+                      alt="Adress"
+                    />
+                    <a href="#" class="p2">м. Минская, ул. Сумская 48</a>
                   </li>
                   <li class="accordion__content-item">
                     <img
