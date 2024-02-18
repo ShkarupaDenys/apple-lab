@@ -1,6 +1,6 @@
-//  malfunction tabs
-const tabButtons = document.querySelectorAll('.malfunction__btn');
-const tabs = document.querySelectorAll('.malfunction__content');
+//  adress tabs
+const tabButtons = document.querySelectorAll('.accordion__tabs-btn');
+const tabs = document.querySelectorAll('.accordion__tabs-content');
 
 if (tabButtons.length) {
   tabButtons[0].classList.toggle('selected', true);

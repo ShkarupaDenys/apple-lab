@@ -320,4 +320,47 @@
             height: 24px;
         }
     }
+
+    &__tabs-list {
+        display: flex;
+        margin-top: 12px;
+
+        @include laptop {
+            margin-top: 16px;
+        }
+    }
+
+    &__tabs-btn {
+        padding: 8px 6px;
+        position: relative;
+        transition: all linear 0.3s;
+        border-radius: 40px;
+        font-size: 12px;
+        display: flex;
+
+        @include largeMob {
+            padding: 8px;
+        }
+
+        @include laptop {
+            padding: 6px 14px;
+            font-size: 16px;
+        }
+
+        @include desktop {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+
+        &.selected {
+            color: $font-color;
+            background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
+        }
+    }
+
+    &__tabs-content {
+        &.hidden {
+            display: none;
+        }
+    }
 }
