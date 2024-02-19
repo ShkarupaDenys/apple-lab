@@ -64,6 +64,10 @@
             font-size: 16px;
         }
 
+        @include desktop {
+            font-size: 20px;
+        }
+
         &.selected {
             color: $font-color;
             background: linear-gradient(78deg, #dceafe 0.64%, #f2f8f2 54.29%, #eaf4e9 98.07%);
