@@ -52,6 +52,7 @@
         position: relative;
         transition: all linear 0.3s;
         border-radius: 40px;
+        display: flex;
 
         @include laptop {
             padding: 10px 30px;

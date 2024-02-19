@@ -135,9 +135,9 @@
             opacity: 0;
             filter: blur(8px);
             visibility: hidden;
-            // opacity: 1;
-            // filter: blur(0);
-            // visibility: visible;
+            //opacity: 1;
+            //filter: blur(0);
+            //visibility: visible;
             transition: all ease-in-out 0.2s;
             position: absolute;
             top: 20px;
@@ -199,13 +199,13 @@
             }
         }
 
-        &-dropdown-wrap {
-            &:hover {
-                .header__contacts-geo-list {
-                    display: flex;
-                }
-            }
-        }
+        //&-dropdown-wrap {
+        //    &:hover {
+        //        .header__contacts-geo-list {
+        //            display: flex;
+        //        }
+        //    }
+        //}
 
         &-text {
             display: none;
@@ -239,14 +239,35 @@
         }
 
         &-geo {
+            position: relative;
+            cursor: pointer;
+
             @include tablet {
                 .header__contacts-text {
                     display: block;
                 }
             }
 
+            &-arrow {
+                //position: absolute;
+                //right: 0;
+                width: 14px;
+                height: 8px;
+                margin-left: 20px;
+
+                @include desktop {
+                    width: 18px;
+                    height: 12px;
+                }
+
+                .active & {
+                    margin-left: auto;
+                    transform: rotate(180deg);
+                }
+            }
+
             &-list {
-                display: flex;
+                //display: flex;
                 display: none;
                 flex-direction: column;
                 margin: 10px 0;
@@ -258,6 +279,10 @@
                 a:hover {
                     color: $primary;
                 }
+            }
+
+            &.active + .header__contacts-geo-list {
+                display: flex;
             }
         }
 
